@@ -137,20 +137,33 @@ python -m ccrf.cli blend --base runs/development_results.csv --rag runs/developm
 
 ## Cloud Run (GCP build)
 
-The same review engine is a public demo API. From this repo (needs `gcloud` auth on `hackathon-2026-transport-2`):
+Live service: [https://ccrf-822735995797.us-central1.run.app](https://ccrf-822735995797.us-central1.run.app)
+
+`GET /v1/health` returns `{"status":"ok"}` when called with a Google identity token. `POST /v1/packages/review` accepts a zip of one package (`Project_Metadata.json` + `Docs/`). Add `?format=html` for the verbatim-highlight review cards. Findings are for human review, not legal conclusions.
+
+Public (`allUsers`) invoke is not set yet — this account cannot `run.services.setIamPolicy`. A project owner can open it with:
 
 ```bash
-gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com --project hackathon-2026-transport-2
+gcloud run services add-iam-policy-binding ccrf --region=us-central1 \
+  --member=allUsers --role=roles/run.invoker --project hackathon-2026-transport-2
+```
+
+Until then, call it authenticated:
+
+```bash
+curl -H "Authorization: Bearer $(gcloud auth print-identity-token)" \
+  https://ccrf-822735995797.us-central1.run.app/v1/health
+```
+
+Rebuild from this repo:
+
+```bash
 gcloud run deploy ccrf --source . --region us-central1 --allow-unauthenticated \
   --timeout 900 --memory 2Gi --cpu 1 \
   --set-env-vars GOOGLE_CLOUD_PROJECT=hackathon-2026-transport-2,GOOGLE_CLOUD_LOCATION=us-central1,CCRF_USE_RAG=0
 ```
 
-`POST /v1/packages/review` accepts a zip of one package (`Project_Metadata.json` + `Docs/`). `GET /v1/health` is the probe. Findings are for human review, not legal conclusions.
-
-Cloud Run APIs are enabled on `hackathon-2026-transport-2`. Source deploy still needs a project owner to grant the default compute SA `822735995797-compute@developer.gserviceaccount.com` **Cloud Run Builder** (`roles/run.builder`) and **Vertex AI User** (`roles/aiplatform.user`). This account cannot `setIamPolicy`.
-
 ## Next
 
-- Deploy Cloud Run after APIs are enabled.
+- Optional: project owner grants `allUsers` `roles/run.invoker` so judges can open the URL without `gcloud`.
 - Dry-run the presentation. Do not retune on Validation.
