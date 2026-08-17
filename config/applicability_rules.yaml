@@ -1,0 +1,28 @@
+# Deterministic applicability — reconstructed from Reference_Checklist.csv
+# and locked against Development/Development_Labels.csv Expected_Applicability.
+# Gemini never decides APPLIES vs DOES_NOT_APPLY.
+
+always_apply:
+  - CC-02  # bid guaranty
+  - CC-03  # non-collusive certification
+  - CC-04  # performance/payment bonds
+  - CC-05  # execution + insurance
+  - CC-06  # contractor registration
+  - CC-07  # Delaware business / subcontractor licenses
+  - CC-10  # order of precedence
+  - CC-11  # written change process
+  - CC-12  # notification of contract changes
+  - CC-13  # audit / record retention
+  - CC-17  # liquidated damages
+
+metadata_equals_yes:
+  CC-01: federal_aid
+  CC-09: buy_america_baba_applicable
+  CC-14: subcontracting_planned
+  CC-15: claim_event
+  CC-16: delay_event
+  CC-18: changed_work_event
+
+# CC-08 applies only when the package issued at least one addendum
+nonempty_list_field:
+  CC-08: issued_addenda

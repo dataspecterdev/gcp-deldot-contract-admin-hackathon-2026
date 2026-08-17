@@ -1,0 +1,131 @@
+# Official source excerpts for Gemini grounding.
+# Scoring authority remains Challenge_Reference_Rule in References/Reference_Checklist.csv.
+# Sources confirmed by the team: DelDOT Standard Specs on the state site for
+# 104.2 / 104.3 / 105.6 / 108.1 (and related spec CCs); 29 Del. C. § 6967 for CC-07;
+# 23 CFR 635.410 for CC-09 context. CC-13 is Proposal/General Notices, not the spec book.
+
+CC-02:
+  source: 2026 DelDOT Standard Specifications 102.8
+  url: https://engineeringsupport.deldot.gov/images/b/b1/2026_DelDOT_Standard_Specifications.pdf
+  excerpt: >
+    Provide a proposal guaranty equal to 10 percent of the total bid price. The bid bond
+    does not need to cite a specific sum of money but does need to state that the bond
+    equals 10 percent of the total bid price.
+
+CC-04:
+  source: 2026 DelDOT Standard Specifications 103.5
+  url: https://engineeringsupport.deldot.gov/images/b/b1/2026_DelDOT_Standard_Specifications.pdf
+  excerpt: >
+    Provide a surety bond, or bonds, at the time of contract execution in a sum equal to
+    100 percent of the contract price. Provide a bond issued by a corporate surety
+    authorized to do business in Delaware.
+
+CC-05:
+  source: 2026 DelDOT Standard Specifications 103.7
+  url: https://engineeringsupport.deldot.gov/images/b/b1/2026_DelDOT_Standard_Specifications.pdf
+  excerpt: >
+    Return the signed contract and contract bonds to the Department within 20 calendar
+    days after the notice of award. Provide a certificate of insurance to the Department
+    before contract execution. The Department will not execute the contract until the
+    contractor provides acceptable proof of insurance.
+
+CC-07:
+  source: 29 Del. C. § 6967 (HS 148 Ch. 401 / HB 270)
+  url: https://legis.delaware.gov/SessionLaws/Chapter?id=16385
+  excerpt: >
+    (b) No agency shall accept a proposal for a public works contract unless such
+    contractor has provided a proper and current copy of its occupational and/or
+    business license. (c) Any contractor that enters a public works contract must
+    provide, within 30 days of entering such public works contract, copies of all
+    occupational and business licenses of subcontractors and/or independent contractors.
+    If a subcontractor or independent contractor is hired more than 20 days after the
+    contractor entered the public works contract, the license shall be provided within
+    10 days of being contracted or hired.
+
+CC-09:
+  source: 23 CFR 635.410 Buy America (federal-aid steel/iron)
+  url: https://www.ecfr.gov/current/title-23/chapter-I/subchapter-G/part-635/subpart-D/section-635.410
+  excerpt: >
+    Federal-aid highway construction is subject to Buy America for steel and iron
+    (23 CFR 635.410) and, where marked applicable, BABA construction-materials rules.
+    For this challenge, apply Buy America/BABA only when project metadata says it
+    applies. If applicable, a clause saying it does not apply is a FLAG. Harmless
+    paraphrase that preserves applicability is not a FLAG.
+
+CC-10:
+  source: 2026 DelDOT Standard Specifications 105.6
+  url: https://engineeringsupport.deldot.gov/images/b/b1/2026_DelDOT_Standard_Specifications.pdf
+  excerpt: >
+    The contract documents are complementary. In case of a conflict the order of
+    precedence is: 1. General Description 2. General Notices 3. Plans 4. Special
+    Provisions 5. Standard Construction Details 6. Standard Specifications 7.
+    Electronic Design Data Files. A later Addendum that explicitly revises a named
+    provision governs that revised provision for this challenge.
+
+CC-11:
+  source: 2026 DelDOT Standard Specifications 104.2
+  url: https://engineeringsupport.deldot.gov/images/b/b1/2026_DelDOT_Standard_Specifications.pdf
+  excerpt: >
+    The contract is not modified, altered, or otherwise changed by any oral promise,
+    statement, or representation made either by the Department or the contractor,
+    unless such modification, alteration, or change is reduced to writing in
+    accordance with the contract. Proceed with a change only after receiving written
+    direction from the engineer.
+
+CC-12:
+  source: 2026 DelDOT Standard Specifications 104.3
+  url: https://engineeringsupport.deldot.gov/images/b/b1/2026_DelDOT_Standard_Specifications.pdf
+  excerpt: >
+    Immediately notify the engineer of the need for a change (written or oral). Perform
+    work associated with a change only after receiving written direction from the
+    engineer. Within 7 calendar days of the initial notification, provide the engineer
+    with the specified written follow-up information unless a later governing document
+    validly revises that deadline.
+
+CC-13:
+  source: DelDOT Proposal / General Notices — Right to Audit (not Standard Specs)
+  url: ""
+  excerpt: >
+    Challenge scoring (proposal General Notices): relevant prime-contractor and
+    subcontractor records supporting contract performance must be available for audit
+    and retained for three years after final payment. A shortened retention period or
+    excluding subcontractor records is a FLAG.
+
+CC-14:
+  source: 2026 DelDOT Standard Specifications 108.1
+  url: https://engineeringsupport.deldot.gov/images/b/b1/2026_DelDOT_Standard_Specifications.pdf
+  excerpt: >
+    Perform no less than 50 percent of total original contract price with the
+    contractor's own organization, excluding designated specialty items. Do not
+    sublet, sell, transfer, assign or otherwise dispose of any portion of the
+    contract without the engineer's written consent. Consent does not relieve the
+    contractor of its responsibility to fulfill the contract.
+
+CC-16:
+  source: 2026 DelDOT Standard Specifications 108.7
+  url: https://engineeringsupport.deldot.gov/images/b/b1/2026_DelDOT_Standard_Specifications.pdf
+  excerpt: >
+    Upon encountering an excusable delay, submit a written request for a contract time
+    extension in accordance with Section 104.3. Failure to provide timely notice
+    constitutes a waiver. The Department will only extend contract time for an
+    excusable delay to work on the critical path that delays scheduled substantial
+    completion. Delay does not create an automatic time extension.
+
+CC-17:
+  source: 2026 DelDOT Standard Specifications 108.9 Table 108.9-1
+  url: https://engineeringsupport.deldot.gov/images/b/b1/2026_DelDOT_Standard_Specifications.pdf
+  excerpt: >
+    Liquidated damages are assessed from Table 108.9-1 by awarded contract value band,
+    with separate working-day and calendar-day daily charges (for example calendar-day
+    charges range from hundreds of dollars in low-value bands up to several thousand
+    dollars in high-value bands). A universal invented flat daily rate such as
+    $10,000/day is a material deviation from the schedule.
+
+CC-18:
+  source: 2026 DelDOT Standard Specifications 109.4
+  url: https://engineeringsupport.deldot.gov/images/b/b1/2026_DelDOT_Standard_Specifications.pdf
+  excerpt: >
+    After timely 104.3 notice, the engineer prices the change in this sequence:
+    B. Unit Prices first, then C. Negotiated Prices, then D. Force Account if
+    agreement is not reached. A fixed arbitrary markup that replaces this workflow
+    is a material deviation.

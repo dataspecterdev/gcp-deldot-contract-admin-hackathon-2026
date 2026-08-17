@@ -1,0 +1,601 @@
+Delaware Code Online
+
+- § 6960
+- § 6960A
+- § 6961
+- § 6962
+- § 6963
+- § 6964
+- § 6965
+- § 6966
+- § 6967
+- § 6968
+- § 6969
+- § 6970
+- § 6970A
+
+# TITLE 29
+
+#### State Government
+
+## Budget, Fiscal, Procurement and Contracting Regulations
+
+### CHAPTER 69. State Procurement
+
+#### Subchapter IV. Public Works Contracting
+
+§ 6960. Prevailing wage requirements.
+
+(a) The specifications for every contract or aggregate of contracts relating to a public works project in excess of $500,000 for new construction (including painting and decorating) or $45,000 for alteration, repair, renovation, rehabilitation, demolition or reconstruction (including painting and decorating of buildings or works) to which this State or any subdivision thereof is a party and for which the State appropriated any part of the funds and which requires or involves the employment of mechanics and/or laborers shall contain a provision stating the minimum wages to be paid various classes of laborers and mechanics which shall be based upon the wages that will be determined by the Delaware Department of Labor, Division of Industrial Affairs, to be prevailing in the county in which the work is to be performed. As of January 1, 2016, the Delaware Department of Labor, Division of Industrial Affairs shall establish the prevailing wage for each respective craft or class of laborers and mechanics at the same rates established in collective bargaining agreements between labor organizations and their employers, or when collective bargaining agreement rates do not prevail, that govern work of a similar nature and similar crafts or classes of laborers and mechanics for the county where the public works contract will be performed if that particular labor organization’s collective bargaining rate prevailed and they participated in the survey, for that particular trade or craft in that particular county for 4 consecutive years. When collective bargaining rates do not apply, the prevailing wage shall be the highest rate of the 4 years. If the agreed rate of pay is designated to be the craft’s collective bargaining agreement, the annual rate adjustment will be determined by the collective bargaining agreement rate for each craft and county, each year. When collective bargaining rates do not prevail, the annual rate adjustment shall be the Consumer Price Index-Construction. If the prevailing wage cannot be reasonably and fairly determined in any locality because no such agreements exists or the collective bargaining rate has not prevailed for 4 consecutive years the Department shall use the prevailing wage as established by the Department’s annual prevailing wage survey. There will be a 1-time challenge of the prevailing wage rate per cycle as in the Department regulations.
+
+For each respective craft or class of laborers or mechanics, the craft or class whose collectively bargained wages as of January 1, 2015, for that particular labor organization’s collective bargaining rate prevailed for that particular trade or craft in that particular county is the prevailing wage rate and whose rate has prevailed for 4 of the last 5 years, or will prevail in the future for 4 consecutive years, shall have their collective bargaining agreement adopted as the prevailing wage rate negotiated by industry standards between workers and employers and the raise be determined by the collective bargaining agreement rate as of September 1 for that craft, county, and year.
+
+All other provisions of this law are to remain unchanged.
+
+(b) Every contract based upon these specifications must contain a stipulation that the employer must pay all mechanics and laborers employed directly upon the site of the work or engaged in any custom fabrication work, regardless of where the work is performed, unconditionally and not less often than once a week and without subsequent deduction or rebate on any account, the full amounts accrued at time of payment, computed at wage rates not less than those stated in the specifications, regardless of any contractual relationship which may be alleged to exist between the employer and such laborers and mechanics. The specifications must further stipulate that the scale of wages to be paid must be posted by the employer in a prominent and easily accessible place at the site of the work, and that there may be withheld from the employer so much of accrued payments as may be considered necessary by the Department of Labor to pay to laborers and mechanics employed by the employer the difference between the rates of wages required by the contract to be paid laborers and mechanics on the work and rates of wages received by such laborers and mechanics to be remitted to the Department of Labor for distribution upon resolution of any claims.
+
+(c) Every contract based upon these specifications shall contain a stipulation that sworn payroll information, as required by the Department of Labor, be furnished weekly. The Department of Labor shall keep and maintain the sworn payroll information for a period of 6 months from the last day of the work week covered by the payroll.
+
+(d) The Department of Labor shall investigate all claims that the prevailing wage rates as provided for under this section are not being or have not been paid. Upon finding that an employer has not paid or is not paying the prevailing wage rates, the Department of Labor shall notify the employer of the violations by certified mail and make an effort to obtain compliance. Upon failure to obtain compliance within 15 days of receipt of said certified mail, the Secretary may terminate all rights of the employer to proceed with the work under the public construction contract, and the employer shall be responsible for all damages resulting therefrom.
+
+(e) Any employer who knowingly fails or refuses to pay the prevailing wage rates provided for under this section, or who fails to submit payroll reports or post notice of the wage rates which apply to the project shall, for each such violation, be subject to a civil penalty of not less than $1,000 nor more than $5,000 for each violation. No public construction contract in this State shall be bid on, awarded to or received by any contractor or subcontractor or any person, firm, partnership or corporation in which such employer has an interest who, within 2 years after entry of a judgment pursuant to this chapter, is adjudicated in violation of this chapter in a subsequent proceeding until 3 years have elapsed from the date of the subsequent penalty judgment. A civil penalty claim may be filed in any court of competent jurisdiction.
+
+(f) Any laborer or mechanic employed by any employer, or the Department of Labor on behalf of any laborer or mechanic employed by any employer, who is paid in a sum less than the prevailing wage rates provided for under this section shall have a right of action against the employer in any court of competent jurisdiction to recover treble the difference between the amount so paid and the prevailing wage rate. Such action may be brought by the Department of Labor in the name and for the benefit of the laborer or mechanic with or without an assignment of the claim from the employee and upon notice to the aggrieved employee, the Department of Labor shall have the power to settle and adjust any such claim to the same extent as would the aggrieved employee. It shall not be a defense to such action that the underpayment was received by the laborer or mechanic without protest. Upon the filing of an action under this section, the employer shall post suitable bond approved by the court for the damages which may be recoverable thereunder. Any judgment entered for plaintiff shall include an award for reasonable attorney’s fees and costs of prosecution. The Department of Labor shall not be required to pay the filing fee or other costs of the action or fees of any nature to file bond or other security of any nature in connection with such action or with proceedings supplementary thereto or as a condition precedent to the availability to the Department of any process in aid of such action or proceedings. The Department shall have the authority to join various claimants in 1 preferred claim lien and, in case of suit, to join them in 1 cause of action.
+
+(g) Any wages collected under this chapter, but not claimed by the employee within 1 year from the date of collection, shall be retained by the Department of Labor for enforcement purposes.
+
+(h) No action to recover wages and damages under this section shall be brought after the expiration of 2 years from the accruing of the cause of action.
+
+(i) Whenever any person shall contract with another for the performance of any work which the contracting person has undertaken to perform, the contracting person shall become civilly liable to employees engaged in the performance of work under such contract for the payment of wages, exclusive of treble damages, as required under this section, whenever and to the extent that the employer of such employees fails to pay such wages, and the employer of such employees shall be liable to such person for any wages paid by the employer under this section. If pursuant to this subsection a person becomes civilly liable to employees of another, such liability shall not constitute a violation of this section for purposes of the termination, civil penalty and debarment provisions of subsections (d) and (e) of this section.
+
+(j) A contract manager shall be responsible for monitoring compliance with this section, but shall not become civilly liable to the same extent as the contracting person. For purposes of this section, “contract manager” means any person who performs the function of the contracting person without becoming a party to the contract of performance, but rather contracts with the recipient of the goods or services to act as the recipient's agent. A contract manager who knowingly fails or refuses to monitor compliance with this section shall, for each such failure or refusal, be subject to a civil penalty of not less than $100 nor more than $500. A civil penalty claim under this subsection may be filed in any court of competent jurisdiction. A contract manager’s liability for a civil penalty pursuant to this subsection shall not constitute a violation of this section for purposes of the termination, civil penalty and debarment provisions of subsections (d) and (e) of this section.
+
+(k) Any employer who discharges or in any manner discriminates against an employee because that employee has made a complaint or has given information to the Department pursuant to this chapter, or because that employee has caused to be instituted or is about to cause to be instituted any proceedings under this chapter, or has testified or is about to testify in any such proceedings, shall be deemed in violation of this chapter and shall be subject to a civil penalty of not less than $1,000 nor more than $5,000 for each violation.
+
+(l) [Repealed.]
+
+(m) None of the specifications of this section shall apply to a project of the Department of Transportation wholly funded by Community Transportation Funds. None of the specifications of this section shall apply to a project wholly funded by the Municipal Street Aid Program authorized pursuant to Chapter 51 of Title 30.
+
+29 Del. C. 1953, § 6913; 53 Del. Laws, c. 380, § 1; 57 Del. Laws, c. 454, § 17; 58 Del. Laws, c. 408; 63 Del. Laws, c. 80, § 69; 65 Del. Laws, c. 368, § 1; 67 Del. Laws, c. 260, § 1; 69 Del. Laws, c. 64, § 28; 69 Del. Laws, c. 295, § 1; 70 Del. Laws, c. 99, § 1; 70 Del. Laws, c. 186, § 1; 70 Del. Laws, c. 601, §§ 6, 8; 71 Del. Laws, c. 310, § 1; 71 Del. Laws, c. 312, § 1; 72 Del. Laws, c. 170, § 1; 73 Del. Laws, c. 129, § 1; 74 Del. Laws, c. 279, §§ 1, 3; 76 Del. Laws, c. 185, § 1; 80 Del. Laws, c. 105, §§ 1-3; 83 Del. Laws, c. 37, § 36; 83 Del. Laws, c. 283, § 44; 84 Del. Laws, c. 42, § 1; 84 Del. Laws, c. 124, § 1; 84 Del. Laws, c. 466, §§ 3, 4;
+
+§ 6960A. Craft training requirement.
+
+(a) (1) A contract relating to a public works project under § 6962 of this title must include a craft training program for each craft in the project if at the time the contractor executes a public works contract, all of the following apply:
+
+a. A project meets the prevailing wage requirement under § 6960 of this title.
+
+b. The contractor employs 10 or more total employees.
+
+c. The project is not a federal highway project, except for the project under § 6962(c)(11) of this title.
+
+d. There is an apprenticeship program for a craft in the project on the list of crafts under § 204(b)(2) of Title 19.
+
+(2) A contractor must commit that all subcontractors provide craft training if paragraph (a)(1) of this section applies to the subcontractor.
+
+(b) (1) If a contract requires a craft training program under subsection (a) of this section, the contractor must satisfy the craft training requirement before the contract is executed. A contractor or subcontractor may satisfy the craft training requirement under this section by doing any of the following for each craft under subsection (a) of this section:
+
+a. Having at least 1 active apprentice in a craft training program for the craft.
+
+b. Having at least 1 active apprentice who completes a craft training program for the craft within the 6 months before the date the contract was executed.
+
+c. Being a member of a consortium that provides craft training for the craft and all of the following apply to the craft training program for the craft:
+
+1. The consortium requires a regular financial contribution.
+
+2. The contractor or subcontractor has access to the craft training program.
+
+3. There is at least 1 active apprentice in the craft training program.
+
+d. Making a payment under subsection (c) of this section.
+
+(2) The craft training program under paragraphs (b)(1)a. through (b)(1)b. of this section may be provided by the contractor or subcontractor or through agreement with another entity.
+
+(3) The active apprentice under paragraphs (b)(1)a. through (b)(1)b. of this section does not have to work on the contract being executed under paragraph (b)(1) of this section.
+
+(c) (1) For contracts executed after September 9, 2022, a contractor or subcontractor may satisfy the craft training requirement under this section by making a payment in the amount established under § 204(b)(2)b.2. of Title 19, for the craft into the Apprenticeship and Training Fund of the Department Labor.
+
+(2) For each calendar year, a contractor or subcontractor satisfies the craft training requirement for all contracts executed during that year when payments made under paragraph (c)(1) of this section after January 1 equal the following amounts:
+
+a. For employers with 10 through 25 employees, payments that total $10,000.
+
+b. For employers with more than 25 employees, payments that total $20,000.
+
+(d) (1) All contracts that require a craft training program under subsection (a) of this section must contain a penalty provision against the successful bidder for the failure to comply with the requirements under this section. The penalty provision must require all of the following:
+
+a. The contractor must pay the amount of the payment required under subsection (c) of this section to the Apprenticeship and Training Fund.
+
+b. An amount that does not exceed 10 percent of the payment under paragraph (d)(1)a. of this section.
+
+(2) A penalty assessed under paragraph (d)(1) of this section may be fully or partially remitted or refunded by the agency awarding the contract only if the contractor establishes compliance within 60 days of the notice of the penalty. A claim for remission or refund of a penalty may only be granted if an application for the remission or refund is filed within 1 year of the notice of the penalty.
+
+(3) All money received from penalties under paragraph (d)(1)b. of this section, that is not remitted or refunded, reverts to the government entity under the contract for which the penalty was imposed.
+
+83 Del. Laws, c. 129, § 4; 83 Del. Laws, c. 283, § 45;
+
+§ 6961. Small public works contract procedures.
+
+(a) Applicability. — Any state contract for which an agency is a party and for which the probable cost is less than or equal to the threshold amount(s) set by the Contracting and Purchasing Advisory Council pursuant to § 6913 of this title for small public works contracts shall be subject to the provisions of this section.
+
+(b) Procedure. — All contracts entered into pursuant to this section shall follow the procedures as prescribed by the Director pursuant to § 6922 of this title.
+
+(c) Bid and performance bonds as authorized in § 6962 of this title may be made a requirement by the agency for contracts made pursuant to this section.
+
+70 Del. Laws, c. 601, § 9; 75 Del. Laws, c. 88, § 16(5);
+
+§ 6962. Large public works contract procedures [For application of this section, see 82 Del. Laws, c. 36, § 3].
+
+(a) Applicability. — Any state contract for which an agency is a party and for which the probable cost is greater than the amount set by the Contracting and Purchasing Advisory Council pursuant to § 6913 of this title for small public works contracts shall be subject to the provisions of this section.
+
+(b) Advertising requirements. —
+
+Each agency shall publicly announce, for 2 consecutive weeks, each public works contract unless a shorter advertisement period has been approved by the Section Director. Public advertising shall require electronic publication accessible to the public in a manner prescribed pursuant to § 6902(12) of this title for 2 consecutive weeks unless a shorter advertisement period has been approved by the Section Director. An agency may also maintain a register of prospective bidders which may be used to provide direct notification of contracts to be bid. This register shall not be used in a manner which will limit the competitiveness of the bidding process described in this subchapter. No agency shall be subject to a cause of action or be otherwise liable for any errors or omissions in administering a bid registry. The public announcement shall also state the nature of the contract under the following conditions:
+
+(1) If the agency requires all bidders to be registered or prequalified in order to receive bidding documents for the proposed contract, the announcement shall state in general terms the character and location of the work and bid and performance bond requirements. If the agency requires prequalification of subcontractors in its invitation to bid, no contractor shall list a subcontractor in its subcontractor listing who has not already been prequalified by the agency.
+
+(2) If the agency does not require bidder registration or prequalification for the proposed contract, the announcement shall state with reasonable accuracy the character, quantity and location of the work as well as bid and performance bond requirements. The public announcement shall also state that the agency may extend the time and place for the opening of bids from that described in the announcement. Such extension shall not take place unless at least 2 calendar days’ notice, unless special circumstances apply as determined by the Section Director, by certified delivery, facsimile transmission or by other verifiable electronic means, is sent to those bidders who obtained copies of the plans and specifications or contract descriptions.
+
+(c) Bidder prequalification requirements. —
+
+(1) The Office shall establish a 2-step process for the prequalification of contractors and subcontractors that desire to bid on large public works contracts for which prequalification is specified by the contracting agency. A contractor shall not be permitted to bid on a contract that requires prequalification unless the contractor has been prequalified pursuant to this subsection. A prequalified and classified contractor shall not be permitted to submit a bid on a specific contract unless the contractor completes a questionnaire and submits supplemental information at the option of the contracting agency or per paragraph (c)(9)a. of this section to the Office pertaining to that contract. The supplemental request for information shall not include any information requested during the first step of the prequalification process, but may require the contractor to affirm that no material changes have occurred since the application for the first step of the prequalification process was submitted to the Office. The prequalification process shall apply to general contractors and subcontractors in the areas that are deemed necessary by the Office.
+
+(2) The prequalification classification issued by the Office as part 1 of the prequalification process shall be valid for 24 months. A contractor or subcontractor subject to prequalification shall request to be reclassified by the Office after the 24-month period in order to remain eligible to bid on public works contracts that require prequalification. A contractor or subcontractor who holds a valid prequalification classification shall report any material changes which could adversely affect the prequalification, as established in paragraph (c)(3) of this section, to the Office in writing within 10 days of the material change. A contractor or subcontractor may report to the Office in writing material changes which could positively affect the prequalification, as established in paragraph (c)(3) of this section. Based on the information provided, the Office may change the classification or revoke prequalification at the sole discretion of the Director.
+
+(3) The prequalification process shall include a requirement that the contractor or subcontractor submit a statement under oath on a form designated by the Office. The form shall fully describe and establish the financial ability, responsibility, plant and equipment, organization, ownership, relationships, and prior experience of the contractor or subcontractor and any other pertinent and material facts as may be deemed necessary by the Office. At the discretion of the Office, the submission shall include part or all of the following:
+
+a. The most recent audited financial statement and/or financial statement review containing a complete statement of the proposing contractor’s or subcontractor’s financial status. Such statement shall include the contractor’s Z score;
+
+b. The proposing contractor’s or subcontractor’s experience on other public works or private sector projects, including but not limited to the size, complexity and scope of the firm’s prior projects;
+
+c. Performance reviews of the proposing contractor or subcontractor on previously awarded public works or private sector construction projects within the last 5 years;
+
+d. Civil judgments and/or criminal history of the proposing contractor’s or subcontractor’s principals;
+
+e. Any debarment or suspension by any government agency;
+
+f. Any revocation or suspension of a license;
+
+g. Any bankruptcy filings or proceedings; and
+
+h. A statement as to organization, which shall demonstrate the adequacy of such organization to undertake a public works contract. This statement shall include the resumes of the management and professional staff.
+
+(4) After the receipt of the submission provided for in paragraph (c)(3) of this section, the Office may verify all information provided in the contractor’s or subcontractor’s submission, including applicable license and certificate requirements, federal or state debarments, and violations of law. The Office may also conduct inquiries or surveys of the contractor’s or subcontractor’s prior customers.
+
+(5) a. Based upon the submission provided for in paragraphs (c)(3) and (4) of this section, the Office Review Committee, which shall include at least 2 Office employees, shall assign a contractor or subcontractor the following classification or classifications and limits for the purpose of determining the types of projects for which a contractor or subcontractor is entitled to bid:
+
+1. A trade(s) or work classification(s); and
+
+2. The maximum contract dollar value for which the contractor or subcontractor may submit a bid.
+
+To effectuate these requirements of the prequalification process, the Office shall develop rules and regulations for assigning classifications and maximum dollar limits.
+
+b. The classification shall be made, or prequalification may be denied, and notice thereof shall be sent to the contractor or subcontractor within 5 days of the determination made pursuant to paragraph (c)(5)a. of this section by registered or certified mail or other legally valid methods. Notice of prequalification classification or denial shall also be sent to the contracting agency if said agency is not the Office.
+
+(6) Based upon the proposing contractor’s or subcontractor’s answers to the step-1 or step-2 prequalification questionnaire, the Office may deny prequalification for any 1 of the following specified reasons:
+
+a. Insufficient financial ability to perform a public works contract;
+
+b. Inadequate experience to undertake a public works contract;
+
+c. Documented failure to perform on prior public or private construction contracts, including but not limited to final adjudication or admission of violations of prevailing wage laws in Delaware or any other state;
+
+d. Prior judgments for breach of contract that indicate the proposing contractor or subcontractor may not be capable of performing the work or completing a large public works contract;
+
+e. Criminal convictions for fraud, misrepresentation or theft relating to contract procurement;
+
+f. Previous debarment or suspension of the contractor or subcontractor by any government agency that indicates the proposing contractor or subcontractor may not be capable of performing the work or completing a large public works contract;
+
+g. Previous revocation or suspension of a license that indicates the proposing contractor or subcontractor may not be capable of performing the work or completing a public works contract;
+
+h. Previous bankruptcy proceedings that indicate the proposing contractor or subcontractor may not be capable of performing the work or completing a public works contract; or
+
+i. Failure to provide accurate prequalification information on past or current prequalification questionnaires.
+
+Reason or reasons for the denial of prequalification shall be in writing, and shall be sent to the contractor or subcontractor within 5 working days of such decision. An agency may refuse to provide any contractor or subcontractor disqualified under this paragraph plans and specifications for a contract. An agency receiving a bid from a contractor or subcontractor disqualified under this paragraph shall not consider such bid.
+
+(7) Any contractor or subcontractor disqualified pursuant to paragraph (c)(6) of this section may request a review of such decisions with the Director within 5 working days of the receipt of the agency’s notification of the prequalification decision. Such request shall be made in writing. No action in law or equity shall lie against any agency or its employees if the contractor or subcontractor does not first review the decision with the Director. To the extent the contractor or subcontractor brings an action challenging a decision made pursuant to paragraph (c)(6) of this section after such review by the Director, the court shall afford great weight to the decision of the Office head and shall not overturn such decision unless the contractor or subcontractor proves by clear and convincing evidence that such decision was arbitrary and capricious.
+
+(8) The Office shall maintain a registry of all contractors and subcontractors prequalified to bid on public works projects. The registry shall include the classification or classifications of the contractor or subcontractor and the maximum contract dollar value for which the contractor or subcontractor may submit a bid.
+
+(9) a. In addition to the prequalification required herein, any agency shall require a contractor or subcontractor to provide supplemental information that is specifically relevant to the public works contract to be bid. Such additional information shall be considered supplemental certification and shall not duplicate in any way the information required by the Office in its prequalification process except for labor supply available to complete the project in a timely manner.
+
+b. Based upon the proposing contractor’s or subcontractor’s answers to the agency’s supplemental prequalification questionnaire, the Director, or in the case of school projects, the school district may deny the prequalification for any 1 of the following specified reasons:
+
+1. Inadequate experience to undertake the specific project that requires supplemental prequalification;
+
+2. Inadequate expertise to undertake the specific project that requires supplemental prequalification;
+
+3. Failure to provide supplemental prequalification information for the specific project that requires supplemental prequalification; or
+
+4. Inadequate labor supply available to complete the project in a timely manner.
+
+Denial of supplemental prequalification by the Office, or in the case of school projects, the school district shall be in writing no later than 2 weeks before the close of the project bid and shall be sent to the contractor or subcontractor within 5 working days of such decision. An agency may refuse to provide any contractor or subcontractor disqualified under this paragraph plans and specifications for the contract. An agency receiving a bid from a contractor or subcontractor disqualified under this paragraph shall not consider such bid.
+
+(10) Any contractor or subcontractor disqualified pursuant to paragraph (c)(9) of this section may request in writing within 5 working days of the receipt of the Office’s or, in the case of school projects, the school district’s, supplemental prequalification a review of such decisions with the Director or the Director’s designee or, in the case of school projects, the school district. No action in law or equity shall lie against any agency or its employees if the contractor or subcontractor does not first review the decision with the Director or, in the case of school projects, the school district within 5 working days after the decision is rendered by the Office or, in the case of school projects, the school district. To the extent the contractor or subcontractor brings an action challenging a decision made pursuant to paragraph (c)(9) of this section after such review by the Director or, in the case of school projects, the school district, the court shall afford great weight to the decision of the Director or, in the case of school projects, the school district and shall not overturn such decision unless the contractor or subcontractor proves by clear and convincing evidence that such decision was “arbitrary and capricious.”
+
+(11) In addition, for the US 301 project from the Maryland-Delaware state line to its termination at Delaware Route 1, all contractors and subcontractors are required, independently or through agreement with other organizations, to provide craft training for journeyman and apprentice levels through a bona fide program approved by and registered with the State of Delaware and/or United States Department of Labor.
+
+(12) a. A Department of Transportation project, excluding a municipal street aid contract, must include a performance-based rating system.
+
+b. The Department of Transportation’s performance-based rating system must be defined in regulations promulgated by the Secretary of the Department of Transportation.
+
+c. A contractor is eligible to bid as follows:
+
+1. A contractor meeting or exceeding the minimum contractor’s performance rating at the time of bid, as determined by the Department’s performance-based contractor evaluation system, is eligible to bid.
+
+2. A. A contractor who does not meet or exceed the minimum contractor’s performance rating at the time of bid is eligible to bid if the contractor agrees to allow the Department to retain 5% of the payments to be made to the contractor for work performed under the contract under the procedures provided in paragraph (d)(5)a.1. of this section.
+
+B. A contract under paragraph (c)(12)c.2. of this section must contain all of the following provisions:
+
+I. A variable retainage in an amount that does not exceed 5%, that is established at the discretion of the Secretary.
+
+II. When the project is at 50% completion, the contractor may request that the retainage be reduced to 2% after an interim evaluation of the current project.
+
+III. The project completion percentage will be based on the actual work completed, excluding money paid for stored materials.
+
+(13) a. If there is a craft training requirement for a craft in the project under § 6960A of this title, a contractor must commit that the contractor and all subcontractors will provide craft training for journeyman and apprentice levels at the time the contractor executes the public works contract.
+
+1.–3. [Repealed.]
+
+b., c. [Repealed.]
+
+d. The Secretary of the Department of Labor may promulgate and adopt regulations to implement this paragraph (c)(13) of this section.
+
+(d) Bid specifications and plans requirements. —
+
+(1) Preparation of plans and specifications and approvals. — The contracting agency shall cause suitable plans and specifications to be prepared for all contracts pursuant to this section. All plans and specifications shall be prepared by registered and licensed architects and/or engineers who shall sign the plans and specifications and affix their seals thereto. This requirement may be waived if:
+
+a. The work to be covered by the public works contract is to be performed in accordance with identical plans and specifications similarly signed and sealed pursuant to which previous public works contracts have been awarded under this subchapter. Any architect and/or engineer who signed and sealed the original of such identical plan(s) will have no liability arising from the use of those plans other than the use contemplated by the contract pursuant to which the original copies of such plans was created, unless such architect and/or engineer reviews and approves such different use; or
+
+b. The project does not require architectural and engineering services and the agency head waives in writing the use of such services.
+
+(2) Agency assistance. — An agency may retain, in accordance with subchapter V of this chapter, the professional services of a general contractor or other qualified firm to assist in cost estimation, economic design analysis and construction.
+
+(3) Prohibition of brand specification. — The description of work and/or materiel and the plans and specifications shall not use a brand or trade name, except as an indication of the type or quality of materiel and in all such limited cases shall contain the words “or approved equal.”
+
+(4) Special provisions. — a. Anti-pollution, conservation, environmental measures or Energy Star equipment not covered by contract specifications. — 1. The description of the materiel and the plans and specifications for the work issued by the agency shall set forth those provisions of federal, state and local statutes, ordinances, rules and regulations respecting anti-pollution, conservation and environmental protection which affect the project or projects for which such solicitations or bids are sought.
+
+2. If the successful bidder must undertake anti-pollution, conservation or environmental protection work not specified in the agency’s plans and specifications or descriptions of materiel, including measures required by the enactment of new or the amendment of existing statutes, ordinances, rules or regulations occurring after the submission of the successful bid or quotation, the awarding agency shall issue a change order, as provided for in § 6963 of this title, setting forth the additional measures that must be undertaken.
+
+3. Cost. — The cost of such a change order to the awarding agency shall be determined in accordance with the contract for change orders or force accounts. If no such provision is set forth in the contract, then the cost to the awarding agency shall be the contractor’s costs for wages, labor costs other than wages, wage taxes, materiel, equipment rentals, insurance and subcontracts attributable to the additional activity plus a reasonable sum for overhead and profit.
+
+4. Authorization. — Written authorization by the agency is to be given to the successful bidder prior to the bidder undertaking such additional activity. Costs incurred by the successful bidder for additional work performed without prior approval shall not be approved for payment by the agency.
+
+5. Energy Star equipment. — Prior to finalizing specifications for equipment to be purchased as part of a large public works contract, the agency or its architect and/or engineer shall review all equipment to determine whether Energy Star rated products are available. For each piece of equipment, if an Energy Star product is available, the specifications and bid documents shall require the use of an Energy Star product unless the agency can demonstrate, in writing, to the satisfaction of the Director, that a product with an Energy Star rating meets at least 1 of the following criteria:
+
+A. The Energy Star rated equipment is not available competitively,
+
+B. The Energy Star rated equipment is not available within a reasonable time frame, or
+
+C. The Energy Star rated equipment does not meet appropriate performance standards.
+
+The agency may include non-Energy Star rated equipment as an alternate in the bid documents to enable lifecycle costing analysis to be performed as part of the analysis of responsive bids. The agency shall be required to award a contract that includes the procurement of Energy Star rated equipment unless the agency can demonstrate, in writing, to the satisfaction of the Director, that the interests of the state would be better served by procuring non-Energy Star rated equipment.
+
+b. Preference for Delaware labor. — In the construction of all public works for the State or any political subdivision thereof or by firms contracting with the State or any political subdivision thereof, preference in employment of laborers, workers or mechanics shall be given to bona fide legal citizens of the State who have established citizenship by residence of at least 90 days in the State. Each public works contract for the construction of public works for the State or any political subdivision thereof shall contain a stipulation that any person, company or corporation who violates this section shall pay a penalty to the Secretary of Finance equal to the amount of compensation paid to any person in violation of this section.
+
+(5) Retainages and substitution of securities. — a. Authority to withhold contract retainage. — 1. Agencies may retain a portion of the payments to be made to a contractor for work performed pursuant to a public works contract. The percentage of the value of work performed which may be retained shall be established for each particular contract in the contract bidding documents and shall be incorporated into the contract. The percentage retained shall be 5% of the value of the work completed by the contractor under the contract. Upon completion of the work under the contract, the agency may release 60% of the amount then retained. The balance of the amount retained will be held until:
+
+A. All reports required of the contract are received;
+
+B. All subcontractors in trades listed on the bid form are paid by the contractor, unless the amount owed to the subcontractor is disputed, in which case the agency may withhold 150% of the amount withheld by the contractor in its dispute with the subcontractor; and
+
+C. Final payment is authorized by the agency.
+
+2. The agency may, at its option, retain, temporarily or permanently, a small amount and may cause the contractor to be paid, temporarily or permanently, from time to time, such portion of the amount retained as it deems equitable. The contractor shall be paid for all work that is due to the contractor under the contract except for the amount retained.
+
+3. The agency may at the beginning of each public works contract establish a time schedule for the completion of the project. If the project is delayed beyond the completion date due to the contractor’s failure to meet the contractor's own responsibilities, the agency may forfeit all or part of retainage at its discretion.
+
+b. Procedures requirement. — Agencies shall establish standard procedures and regulations for the administration of contract retainages prior to entering into contracts which require retainages. All agency procedures shall provide for contract retainage and substitution of securities for retainage.
+
+c. Substitution of securities. — 1. The contractor under a public works contract, with the approval of the agency, may deposit securities as authorized by this section in substitution for moneys being withheld from the contractor as retainage. Securities allowable for substitution of retainage shall be: United States Treasury Bonds, United States Treasury Notes, United States Treasury Certificates of Indebtedness or United States Treasury Bills; bonds or notes of the State; bonds of any political subdivision of the State; or certificates of deposit from state or national banks located in this State; or any letter of credit or other security approved by the agency.
+
+2. The contractor shall have the right to withdraw and take all or portions of the moneys being retained from the contractor under the contract by depositing securities in substitution for such moneys. The contractor may do so only in accordance with the agency’s standard procedures and mechanisms. Such substitution shall be approved by the agency only if the aggregate market value of the securities are at least as great as the contract retainages being withdrawn.
+
+3. A contractor may substitute cash for and receive back all or part of the securities on deposit from the contractor. The cash must at least have the same value as the market value of the securities received back from the agency.
+
+4. The contractor shall be entitled to receive, in all events, all interest and income earned on the securities deposited by the contractor in substitution for contract retainage. If the securities deposited are in the form of coupon bonds, the agency or the escrow agent designated by it and holding the deposited securities shall deliver each coupon to the contractor as it matures.
+
+5. All securities shall be released, delivered and paid over to the contractor at such time as cash moneys being retained from the contractor would have been released, delivered and paid over to the contractor under the public works contract if there had been no substitution for the cash moneys.
+
+6. All costs of depositing and maintaining securities as provided for in this section shall be borne by the contractor.
+
+7. No agency shall have any duty to invest moneys being retained by it from a contractor under a public works contract in any interest bearing account or to establish any procedures or mechanisms for any such investment.
+
+8. Notwithstanding any other provisions of this section, any contracting agency may deny the contractor on any public works contract permission to substitute securities for moneys being held as retainages. This action shall be taken only for good cause and when the agency deems it to be in the best interest of the contracting agency. Written notice shall be given to the contractor and a hearing shall be held by the agency showing cause for such denial if requested in writing by the contractor. Denial of such substitution shall be for a stated period of time, not to exceed a period of 3 years, and shall continue until the end of the stated time period, or until the contractor has successfully completed all outstanding public works contracts without forfeiting any part of the retainage held by the agency, whichever occurs first.
+
+(6) Partial payments. — Any public works contract executed by any agency may provide for partial payments with respect to materials placed along or upon the sites or stored at secured locations, which are suitable for use in the performance of the contract. When approved by the agency, partial payments may include the values of tested and acceptable materials of a nonperishable or noncontaminative nature which have been produced or furnished for incorporation as a permanent part of work yet to be completed, provided acceptable provisions have been made for storage. Any allowance made for materials on hand will not exceed the delivered cost of the materials as verified by invoices furnished by the contractor, nor will it exceed the contract bid price for the material complete in place.
+
+(7) Equality of employment opportunity and equal pay on public works. —
+
+a. As a condition of the awarding of any contract for public works financed in whole or in part by state appropriation, such contracts shall include the following provisions:
+
+During the performance of this contract, the contractor agrees as follows:
+
+1. A. The contractor will not discriminate against any employee or applicant for employment because of race, creed, color, sex, sexual orientation, gender identity, national origin, housing status, or any other basis protected under Chapter 7 of Title 19.
+
+B. The contractor will take positive steps to ensure that applicants are employed and that employees are treated during employment without regard to their race, creed, color, sex, sexual orientation, gender identity, national origin, housing status or any other basis protected under Chapter 7 of Title 19, in all of the following actions:
+
+I. Employment.
+
+II. Upgrading.
+
+III. Demotion or transfer.
+
+IV. Recruitment or recruitment advertising.
+
+V. Layoff or termination.
+
+VI. Rates of pay or other forms of compensation.
+
+VII. Selection for training, including apprenticeship.
+
+C. The contractor agrees to post in conspicuous places available to employees and applicants for employment notices provided by the contracting agency setting forth the nondiscrimination requirements under paragraphs (d)(7)a.1.A. through (d)(7)a.1.B. of this section.
+
+2. The contractor will, in all solicitations or advertisements for employees placed by or on behalf of the contractor, state that all qualified applicants will receive consideration for employment without regard to race, creed, color, sex, sexual orientation, gender identity, national origin, housing status, or any other basis protected under Chapter 7 of Title 19.
+
+3. The contractor will ensure employees receive equal pay for equal work, without regard to sex. Employee pay differential is acceptable if pursuant to a seniority system, a merit system, a system which measures earnings by quantity or quality of production, or if the differential is based on any other factor other than sex.
+
+b. The Secretary of the Department of Labor shall be responsible for the administration of this provision and shall adopt such rules and regulations and issue such orders as deemed necessary to achieve the purposes thereof; provided, that no requirement established hereby shall be in conflict with § 6904 of this title.
+
+c. For the purposes of this section:
+
+1. “Housing status” means as defined in § 204 of Title 19.
+
+2. “Protective hairstyle” includes braids, locks, and twists.
+
+3. “Race” includes traits historically associated with race, including hair texture and a protective hairstyle.
+
+(8) Bid bonding requirements. — a. All bids shall be accompanied by a deposit of either a good and sufficient bond to the agency for the benefit of the agency, with corporate surety authorized to do business in this State, the form of the bond and the surety to be approved by the agency, and the bond form used shall be the standard form issued by the Office of Management and Budget for this purpose or a security of the bidder assigned to the agency, for a sum equal to at least 10% of the bid. The bid bond need not be for a specific sum, but may be stated to be for a sum equal to 10% of the bid to which it relates and not to exceed a certain stated sum, if said sum is equal to at least 10% of the bid. Any bid which, at the time it is submitted, is not accompanied by a bid bond or sufficient security as required by this paragraph shall not be opened or read, and shall be rejected.
+
+b. Upon the execution of a formal contract and performance bond, the bid bond or security shall be returned to the successful bidder. The security of the unsuccessful bidders shall be returned to them immediately upon the awarding of the contract or the rejection of all bids, but in no event later than 30 days after the opening of bids with the exception of school districts and the Department of Public Instruction, which shall be no more than 60 days unless the contracting agency or school district extends the bid evaluation period by 5 working days per the requirements of paragraph (d)(13)a. of this section. If the bid evaluation period is extended by 5 working days, then the security of each unsuccessful bidder shall be returned to them on the first working day after the end of the extended bid evaluation period.
+
+c. Loss of bid bond as damages. — In the event of any successful bidder refusing or neglecting to execute a formal contract and bond within 20 days of the awarding of the contract, the bid bond or security deposited by the successful bidder shall be taken and become the absolute property of the State for the benefit of the agency as liquidated damages. Such damages shall neither constitute a forfeiture nor a penalty and shall be deposited with the Secretary of Finance. Such moneys pertaining to Department of Transportation contracts shall be deposited in the Transportation Trust Fund. The contracting agency may award the contract to the next lowest responsible bidder or re-advertise for new bids.
+
+d. In the case of bids submitted to agencies other than any county of this State and other than any public school district, wherever security is required under this section, the vendor shall also supply with its bid its taxpayer identification number (i.e., federal employer identification number or social security number) or a Delaware business license number and, should the vendor be awarded a contract, such vendor shall provide to the agency the taxpayer identification or Delaware business license numbers of such subcontractors. Such numbers shall be provided on the later of the date on which such subcontractor is required to be identified or the time the contract is executed. The agency shall report to the Division of Revenue each vendor selected for award within 15 days of execution of the contract and each subcontractor within 15 days of such contractor having been identified to the agency or on the date of execution of the contract, whichever is later, unless the Director of the Division of Revenue has notified the agency of criteria according to which, in the Director’s discretion, reporting is not required and the contract meets such criteria.
+
+(9) Performance bonding requirements. — a. Simultaneous with the execution of the formal contract, the successful bidder shall also execute a good and sufficient bond to the contracting agency for the benefit of the agency, with corporate surety authorized to do business in this State, in a sum equal to 100% of the contract price and the bond form used shall be the standard form issued by the Office of Management and Budget.
+
+b. The bond shall be conditioned upon the faithful compliance and performance by the successful bidder of each and every term and condition of the contract and the proposal and plans and specifications thereof, at the time and in the manner prescribed by the contract and the plans and specifications, including the payment in full, to every firm furnishing materiel or performing labor in the performance of the contract, of all sums of money due it for such labor or materiel. The bond shall also contain the successful bidder’s guarantee to indemnify and save harmless the agency from all costs, damages and expenses growing out of or by reason of the successful bidder’s failure to comply and perform the work and complete the contract in accordance with the contract.
+
+c. The agency may, when it considers that the interests of the agency so require, cause judgment to be confessed upon the bond. All sums received through confession of judgment shall be paid for the credit of the agency to the Secretary of Finance or to the chief financial officer of the agency if it is not a state agency.
+
+d. Every firm furnishing materiel or performing labor under the contract for which the successful bidder is liable may maintain an action on the bond for its own use in the name of the agency in any court of competent jurisdiction for the recovery of such sum or sums as may be due such firm from the successful bidder, but if the bond so provides, no suit shall be commenced after the expiration of 1 year following the date on which the successful bidder ceased work on the contract. Otherwise, suits may be commenced at any time within 3 years following the date the last work was done on the contract.
+
+e. No firm or surety, in any action brought under this section, or on the bond required by this section, shall assert as a defense to such action the claim that the bond given pursuant to this section contained a limitation or restriction not provided for by this section.
+
+f. In the event of defaults of its contracts, the money collected on the performance bonds shall be utilized by the contracting agency for the projects for which the performance bonds were issued. All performance bond proceeds received shall be deposited with the Secretary of Finance for the credit of the agency. Such moneys pertaining to Department of Transportation contracts shall be deposited in the Transportation Trust Fund.
+
+g. In addition to the bond, letter of credit or other financial security posted by the successful bidder in conjunction with the execution of the formal contract, each successful bidder, regardless of the type of the security posted or waived, as the case may be, must purchase adequate insurance for the performance of the contract and, by submission of a bid, does agree to indemnify and save harmless and to defend all legal or equitable actions brought against the agency or officer or employee of the agency for and from all claims of liability which is or may be the result of the successful bidder’s actions during the performance of the contract. The purchase or nonpurchase of such insurance or the involvement of the successful bidder in any legal or equitable defense of any action brought against the successful bidder based upon work performed pursuant to the contract shall not waive any defense which the agency and its officers and employees might otherwise have to such claims, specifically including the defense of sovereign immunity, where applicable, and by the terms of this section, the agency and its officers and employees shall not be financially responsible for the consequences of work performed, pursuant to said contract.
+
+h. Contracts may contain a waiver of the bond requirement; provided however, that the successful bidder post with the contracting agency an irrevocable letter of credit or other suitable or readily collectible financial security for the project. Such security shall be subject to the terms and conditions of the contracting agency.
+
+(10) Public buildings; special requirements. — a. Pre-bid meeting requirement. —
+
+In the case of any public works contract for the construction, reconstruction, alteration or repair of any public building (not a road, street or highway) the agency shall call a meeting of all prospective bidders upon notice in compliance with Chapter 100 of this title. The meeting shall be at least 15 days before the date for the submission of bids.
+
+1. At the meeting, all the participants, including the agency, shall attempt to agree upon a listing of all subcontractor categories to be included in the bids for performing the work as required by paragraph (d)(10)b. of this section and any such agreed listing shall be final and binding upon all bidders and upon the agency. If all of the participants do not agree on such a listing at the meeting, then the agency itself, at least 10 days before the due date for the submission of bids, shall determine the subcontractor categories to be included in the listing. The listing, whether agreed to by all of the participants at the meeting or determined by the agency itself in the absence of the unanimous agreement of the participants at the meeting, shall be published by the agency at least 10 days before the due date for the submission of bids by mailing and listing to all of the participants at the meeting. The listing, as so published, shall be final and binding upon all bidders and the agency and it shall be filled out completely, in full, without any abbreviations. If the agency required prequalification of subcontractors pursuant to this section in its invitation to bid, no contractor shall list a subcontractor in its subcontractor listing required by this subsection who has not already been prequalified by the agency.
+
+2. If a pre-bid meeting is held but the bidding process does not proceed, a new bidding process for the same project without any changes to the scope of the project does not require a new pre-bid meeting if the agency head determines that in the best interest of the State one is not needed.
+
+b. Subcontracting requirements. — All contracts for the construction, reconstruction, alteration or repair of any public building (not a road, street or highway) shall be subject to the following provisions:
+
+1. Such contract shall be awarded only to a bidder whose bid is accompanied by a statement containing, for each subcontractor category set forth in the listing as provided in paragraph (d)(10)a. of this section the name and address (city or town and State only — street number and P.O. Box addresses not required) of the subcontractor whose services the bidder intends to use in performing the work and providing the materiel for such subcontractor category. Where any services and/or materiel are to be provided by or through a third-tier contractor, the bidder shall also supply the name and address of the third-tier contractor. If a bidder intends to perform the work or provide the materiel for any subcontractor category specifically established by the agency and as set forth in the listing provided for in paragraph (d)(10)a. of this section, the bidder must list itself as the subcontractor for that category. If at the time it is submitted a bid is not accompanied by the subcontractor statement required by this subparagraph, or if a bidder fails to list itself as the subcontractor for any category for which it intends to perform the work or provide the materiel, the bid shall not be opened or read, and shall be rejected.
+
+2. The contracting agency shall neither accept any bid nor award any contract to any bidder which, as the prime contractor, has listed itself as the subcontractor for any subcontractor category on the listing as provided in paragraph (d)(10)a. of this section, unless:
+
+A. It has been established to the satisfaction of the awarding agency that the bidder has customarily performed the specialty work of such subcontractor category by artisans regularly employed by the bidder’s firm;
+
+B. That the bidder is duly licensed by the State to engage in such specialty work, if the State requires such licenses; and
+
+C. That the bidder is recognized in the industry as a bona fide subcontractor or contractor in such specialty work and subcontractor category.
+
+The typical subcontractor categories involving specialty work includes, by way of illustration and not limited to, plumbing, electrical wiring, heating, roofing, insulating, weather stripping, masonry, bricklaying and plastering. The decision of the awarding agency as to whether a bidder who lists itself as the subcontractor for a subcontractor category set forth in the listing as provided in paragraph (d)(10)a. of this section shall be final and binding upon all bidders, and no action of any nature shall lie against any awarding agency or its employees or officers because of its decision in this regard.
+
+3. After such a contract has been awarded, the successful bidder shall not substitute another subcontractor for any subcontractor whose name was set forth in the statement which accompanied the bid without the written consent of the awarding agency. No agency shall consent to any substitution of subcontractors unless the agency is satisfied that the subcontractor whose name is on the bidders accompanying statement:
+
+A. Is unqualified to perform the work required;
+
+B. Has failed to execute a timely reasonable subcontract;
+
+C. Has defaulted in the performance on the portion of the work covered by the subcontract; or
+
+D. Is no longer engaged in such business.
+
+4. All such contracts shall contain a provision for a penalty against the successful bidder for its failure to utilize any or all the subcontractors in the successful bidder’s accompanying statement in the performance of the work on the public building contemplated by the contract. The penalty amount shall be set by the agency. The agency will also determine if the amount is to be deducted from payments to the bidder for contract performance or if the amount is to be paid directly to the agency by the bidder. Any penalty amount assessed against the contractor may be remitted or refunded, in whole or in part, by the agency awarding the contract, only if it is established to the satisfaction of the agency that the subcontractor in question has defaulted or is no longer engaged in such business. No claim for the remission or refund of any penalty shall be granted under this section unless an application is filed within 1 year after the liability of the successful bidder accrues. All penalty amounts assessed and not refunded or remitted to the contractor shall be reverted to the State, municipality or other agency as the case may be.
+
+5. If awarded, not to a general contractor, but to a prime contractor which contracts directly with agency awarding and/or administering the contract, such contract may include a provision in its contract specifications that the successful bidder perform a fixed percentage of the work of said public works contract up to 50% of the total contract bid. Factors to be considered by the agency awarding the contract in setting the required percentage of amount of work the successful bidder must perform may include the degree of difficulty involved in the agency’s administration of the work covered under the terms of the public works contract; the degree of specialty work contemplated in the contract including, but not limited to, the amount of plumbing, electrical wiring, heating, roofing, insulation, weather-stripping, masonry, bricklaying or plastering work under the contract; and the time period required in which to complete the public works project. The terms of the contract shall so specify reasons for the stated percentage in its general terms and conditions. The decision of the agency setting the required percentage shall not be set aside by any court of competent jurisdiction as long as there is a rational basis for setting the required fixed percentage to be performed by the contractor. If the successful bidder fails to perform pursuant to the terms of this provision, the agency awarding and/or administering the contract may invoke the provisions of § 6964 of this title.
+
+6. No construction manager contract for public school projects may be signed unless approved by the Director.
+
+(11) Other contracting requirements. — a. Asbestos abatement. — The selection of any contractor to perform asbestos abatement for State-funded projects shall be approved by the Office of Management and Budget pursuant to Chapter 78 of Title 16.
+
+b. Standards of construction; protection of physically handicapped. — All contracts shall conform with the standards established by the Delaware Architectural Accessibility Board as authorized by Chapter 73 of this title, unless otherwise exempted by the Board.
+
+(12) Public bid opening requirements. — a. Bids shall be opened publicly and the contractor and total bid price or the contractor, base bid, and alternate price should be read aloud at the time and place designated in the plans and specifications.
+
+b. Bids shall be unconditionally accepted without alteration. After the bid opening, no corrections in bid prices or other provisions of bids prejudicial to the interests of the State or fair competition shall be permitted.
+
+(13) Bid evaluation, contract award and execution procedure. —
+
+a. The contracting agency shall award any public works contract within 30 days of the bid opening to the lowest responsive and responsible bidder, unless the agency elects to award on the basis of best value, in which case the election to award on the basis of best value shall be stated in the invitation to bid. Any public school district and its board shall award public works contracts in accordance with this section’s requirements except it shall award the contract within 60 days of the bid opening. A contracting agency shall extend the 30-day bid evaluation period by a total of 5 working days and a school district shall extend the 60-day bid evaluation period by a total of 5 working days if a bid is nonresponsive or a bidder is judged to be not responsible, and the bidder cannot be notified in writing a minimum of 5 days prior to the end of the 30-day bid evaluation period in the case of an agency, or the 60-day bid evaluation period in the case of a school district. Written notification to the bidder or bidders whose bid is non-responsive or who have been determined to be not responsible shall be received at least 5 working days prior to the end of the original or the extended evaluation period and shall specify the reason or reasons why the bid is nonresponsive or the bidder determined to be not responsible. If the bid evaluation period is extended by 5 working days, the contracting agency or school district shall notify each bidder in writing prior to the end of the 30-day bid evaluation period in the case of an agency, or the 60-day bid evaluation period in the case of a school district, that the bid evaluation period is being extended by 5 working days. The written notification to all bidders shall include the calendar date by which the agency or school district shall award a contract or reject all bids.
+
+1. Each bid on any public works contract must be deemed responsive by the agency to be considered for award. A responsive bid shall conform in all material respects to the requirements and criteria set forth in the contract plans and specifications.
+
+2. An agency shall determine that each bidder on any public works contract is responsible before awarding the contract. Factors to be considered in determining the responsibility of a bidder include:
+
+A. The bidder’s financial, physical, personnel or other resources including subcontracts;
+
+B. The bidder’s record of performance on past public or private construction projects, including, but not limited to, defaults and/or final adjudication or admission of violations of prevailing wage laws in Delaware or any other state;
+
+C. The bidder’s written safety plan;
+
+D. Whether the bidder is qualified legally to contract with the State;
+
+E. Whether the bidder supplied all necessary information concerning its responsibility; and,
+
+F. Any other specific criteria for a particular procurement, which an agency may establish; provided however, that, the criteria shall be set forth in the invitation to bid and is otherwise in conformity with state and/or federal law.
+
+3. If an agency determines that a bidder is nonresponsive or not responsible, the determination shall be in writing and set forth the basis for the determination. A copy of the determination shall be sent to the affected bidder within 5 working days of said determination. The final determination shall be made part of the procurement file.
+
+4. A. If the agency elects to award on the basis of best value, the agency must determine that the successful bidder is responsive and responsible, as defined in this subsection. The determination of best value shall be based upon objective criteria that have been communicated to the bidders in the invitation to bid. The following objective criteria shall be assigned a weight consistent with some or all of the following:
+
+I. Price — must be at least 70% but no more than 90%.
+
+II. Schedule — must be at least 10% but no more than 20%.
+
+III. Performance — must be at least 10% but no more than 20%.
+
+IV. Disadvantaged business enterprise participation (only for projects valued in excess of $30,000,000) — must be at least 10% but no more than 30%.
+
+B. Performance criterion must be based on a contractor’s performance rating as determined by the agency’s performance-based rating system. The agency’s performance-based rating system must be based on previous contracting performance and may not be based on a set of prescriptive rules favoring a particular business model or business procedure. The performance-based rating system must be defined in regulations promulgated by the Secretary of the agency and must include a procedure for a contractor to appeal a performance-based rating.
+
+C. A weighted average stated in the invitation to bid shall be applied to each criterion according to its importance to each project. The agency shall rank the bidder according to the established criteria and award to the highest ranked bidder. Every state agency and school district shall, on a yearly basis, file a report with every member of the General Assembly and the Governor that states which projects were bid under best value and what contractor was awarded each contract.
+
+b. A contract may be awarded to a bidder other than the lowest responsible and responsive bidder if, in the opinion of the contracting agency, the interest of the agency shall be better served by awarding the contract to another bidder. Such award shall be made only if the contracting agency makes a written determination of the award describing the reason or reasons why such award better serves the interest of the agency. The reason or reasons for making such award may include, but are not limited to, unsatisfactory performance on any previously awarded contract by the bidder being rejected.
+
+c. The successful bidder shall execute a formal contract within 20 days after the award of the contract. The contract shall be in a form with terms and conditions approved by the contracting agency. The successful bidder shall also provide a bond as required in paragraph (d)(8) of this section within 20 days after the award of the contract.
+
+d. If the successful bidder refuses or neglects to execute a formal contract and bond as required in this subchapter, the bidder’s bid bond or security deposit shall be taken and become the absolute property of the agency for the benefit of the agency as liquidated damages, and not as a forfeiture or as a penalty. Such moneys shall be deposited with the Secretary of Finance or the chief financial officer of the agency if the agency is not a state agency.
+
+e. If 2 or more responsible and responsive bidders shall bid an equal amount and such amount shall be the lowest bid, the contracting agency may award the contract to any 1 of them or may reject all bids.
+
+f. A contracting agency may reject all bids on any contract prior to the award of the contract for any reason it believes to be in the best interest of the agency.
+
+g. Electronic bid or electronic submission. —
+
+1. If the Office or an agency determines that an electronic bid or electronic submission is beneficial, the Office or the agency may use the selected method to obtain bids for public works contracts.
+
+2. The solicitation must designate that the procurement method will be an electronic bid or electronic submission, a schedule of bid activities, and an electronic mail account to which the response must be sent.
+
+3. The Office’s or the agency’s representative and a witness shall open the electronic mail account immediately after the closing date and time; record the names of the vendors that responded, the date and time submitted, and the bids or associated prices; and prepare a tabulation of all responsive vendors for review.
+
+h. On-line bidding method. —
+
+If the Office or an agency determines that an on-line bidding method is beneficial, the Office or the agency may use an on-line bidding method to obtain and evaluate bids for public works contracts. The Office or agency must indicate the method in the solicitation.
+
+i. [Repealed.]
+
+(14) Suspension and debarment. —
+
+a. 1. Any contractor who fails to perform a public works contract or complete a public works project within the time schedule established by the agency in the invitation to bid, may be subject to suspension or debarment for 1 or more of the following reasons:
+
+A. Failure to supply the adequate labor supply ratio for the project.
+
+B. Inadequate financial resources.
+
+C. Poor performance on the project.
+
+D. Failure to provide required craft training under § 6960A of this title.
+
+2. Any subcontractor who fails to provide required craft training under § 6960A of this title may be subject to suspension or debarment.
+
+b. If a contractor fails to perform a public works contract or complete a public works project under paragraph (d)(14)a. of this section or a subcontractor fails to provide required craft training under § 6960A of this title, the agency that contracted for the public works project may petition the Director of the Office of Management and Budget for suspension or debarment of the contractor. The agency shall send a copy of the petition to the contractor within 3 working days of filing with the Director. If the Director concludes that the petition has merit, the Director shall schedule and hold a hearing to determine whether to suspend the contractor, debar the contractor or deny the petition. The agency shall have the burden of proving, by a preponderance of the evidence, that either the subcontractor failed to provide required craft training under § 6960A of this title or the contractor failed to perform or complete the public works project within the time schedule established by the agency by failing to do so for 1 or more of the following reasons:
+
+1. Failure to supply the adequate labor supply ratio for the project.
+
+2. Inadequate financial resources.
+
+3. Poor performance on the project.
+
+4. Failure to provide required craft training under § 6960A of this title.
+
+c. 1. Upon a finding in favor of the agency under paragraph (d)(14)b. of this section because a contractor failed to perform a public works contract or complete a public works project, the Director may suspend a contractor from bidding on any project funded, in whole or in part, with public funds for up to 1 year for a first offense, up to 3 years for a second offense and permanently debar the contractor for a third offense.
+
+2. Notwithstanding the penalties under paragraph (d)(14)c.1, of this section, upon a finding in favor of the agency that a contractor or subcontractor failed to perform the requirements under § 6960A of this title, the Director shall suspend a contractor or subcontractor who fails to perform the requirements under § 6960A of this title and shall debar the contractor or subcontractor from bidding on any project funded, in whole or in part, with public funds for up to 5 years.
+
+d. The Director shall issue a written decision and shall send a copy to the contractor and the agency. Such decision may be appealed to the Superior Court within 30 days for a review on the record.
+
+70 Del. Laws, c. 601, § 9; 70 Del. Laws, c. 186, § 1; 72 Del. Laws, c. 133, §§ 3-6; 72 Del. Laws, c. 258, § 77; 73 Del. Laws, c. 289, § 1; 73 Del. Laws, c. 300, § 1; 73 Del. Laws, c. 364, § 4; 73 Del. Laws, c. 428, §§ 3, 4; 73 Del. Laws, c. 438, § 2; 74 Del. Laws, c. 373, §§ 2-4; 74 Del. Laws, c. 416, §§ 2, 3; 75 Del. Laws, c. 88, § 16(5); 77 Del. Laws, c. 90, § 23; 77 Del. Laws, c. 329, § 116; 78 Del. Laws, c. 288, § 3; 79 Del. Laws, c. 47, § 26; 80 Del. Laws, c. 56, § 1; 81 Del. Laws, c. 298, § 4; 81 Del. Laws, c. 365, § 1; 82 Del. Laws, c. 36, § 2; 83 Del. Laws, c. 13, § 24; 83 Del. Laws, c. 129, § 5; 83 Del. Laws, c. 188, § 1; 84 Del. Laws, c. 42, § 1; 84 Del. Laws, c. 45, § 1; 84 Del. Laws, c. 124, § 1; 84 Del. Laws, c. 429, § 13; 84 Del. Laws, c. 489, § 11; 84 Del. Laws, c. 513, § 2; 85 Del. Laws, c. 144, § 18;
+
+§ 6963. Emergency procedures and contract change orders.
+
+(a) All of the provisions of this subchapter may be waived pursuant to § 6907 of this title.
+
+(b) The awarding agency may issue a change order to the public works contract setting forth any change, addition or extra work required to be undertaken by the contractor. Such changes may be necessitated by changed situations, unforeseen conditions, strikes and acts of God. Change orders shall be issued for all changes or extra work determined to be necessary and requested by the agency, but not specified in the contract or its plans and specifications. The change order shall not:
+
+(1) Be subject to the competitive bidding requirements of this subchapter; or
+
+(2) Invalidate the contract, provided that such change is within the scope of the contract as set forth in the standard specifications, special provisions or similar publication of the agency; or
+
+(3) Be subject to the requirement for lifecycle costing analysis as described in §§ 6902 and 6909A(a) of this title.
+
+70 Del. Laws, c. 601, § 9; 74 Del. Laws, c. 419, § 9;
+
+§ 6964. Contract performance.
+
+If any firm entering into a public works contract neglects or refuses to perform or fails to comply with its terms, the agency may terminate the contract and proceed to award a new contract in accordance with this subchapter or may require the surety on the performance bond to complete the contract in accordance with the terms of the performance bond.
+
+70 Del. Laws, c. 601, § 9;
+
+§ 6965. Sole source procurement.
+
+(a) A contract may be awarded for a public works project without competition if the agency head, prior to the procurement, determines in writing that there is only 1 source for the required public works project. Sole source procurement shall not be used unless there is sufficient evidence that there is only 1 source for the required public works project and that no other type of public works project will satisfy the requirements of the agency. The agency shall examine cost or pricing data, which shall include lifecycle costing analysis as described in §§ 6902 and 6909A(a) of this title if the sole source offers more than 1 type or variety of equipment prior to an award under this section. Sole source procurement shall be avoided, except when no reasonable alternative sources exist. A written determination by the agency on the basis for the sole source procurement shall be included in the contract file.
+
+(b) An agency seeking a sole source procurement shall prepare written documentation citing the existence of a sole source condition. The document shall include the specific efforts made to determine the availability of any other source and an explanation of the procurement need. The agency may, for confirmation, submit this documentation to the Section for review and comment prior to the intended date of award.
+
+(c) The agency shall negotiate with the single supplier, to the extent practicable, a contract advantageous to the agency. The agency shall enter into a formal contract stating the terms and conditions of the procurement.
+
+70 Del. Laws, c. 601, § 9; 74 Del. Laws, c. 419, § 10; 75 Del. Laws, c. 88, § 22;
+
+§ 6966. Multiple source contracting.
+
+An agency may award a contract for a particular public works project to 2 or more firms if the agency head makes a determination that such an award is in the best interests of the State. If such a determination is made, the advertisement shall include a notification of the right of the agency to make such an award and the criteria upon which such an award will be based.
+
+70 Del. Laws, c. 601, § 9;
+
+§ 6967. Requirement of occupational and business license [For application of (b) and (c), see 79 Del. Laws, c. 401, § 4].
+
+(a) All contractors, subcontractors and independent contractors shall have a proper and current occupational and/or business license, as required by Title 30, to enter or perform work under a public works contract. It is the responsibility of a contractor to verify and make a record that all subcontractors or independent contractors working for such contractor pursuant to a public works contract shall have their occupational and/or business licenses, as required by Title 30.
+
+(b) No agency shall accept a proposal for a public works contract unless such contractor has provided a proper and current copy of its occupational and/or business license, as required by Title 30, to such agency.
+
+(c) Any contractor that enters a public works contract must provide to the agency to which it is contracting, within 30 days of entering such public works contract, copies of all occupational and business licenses of subcontractors and/or independent contractors that will perform work for such public works contract. However, if a subcontractor or independent contractor is hired or contracted more than 20 days after the contractor entered the public works contract the occupational or business license of such subcontractor or independent contractor shall be provided to the agency within 10 days of being contracted or hired.
+
+(d) Any contractor, subcontractor or independent contractor that does not have a proper and current occupational and/or business license, as required by Title 30, while working under a public works contract shall be subject to a civil penalty not to exceed $1,000. Such penalty shall be enforced by the Director of Revenue and administered in accordance with Chapters 3 and 5 of Title 30. This penalty shall be in addition to any other penalties imposed pursuant to Title 30.
+
+79 Del. Laws, c. 401, § 1;
+
+§ 6968. Requirement of certificate of registration.
+
+(a) After a bid proposal for a public works contract is submitted, but before the award of a public works contract, a contractor must provide the agency to which it is contracting a copy of the certificate of registration under Chapter 36 of Title 19 for each subcontractor listed in the bid proposal.
+
+(b) An agency shall provide contractors and subcontractors the opportunity to register under Chapter 36 of Title 19 before the award of a contract.
+
+82 Del. Laws, c. 168, §§ 5, 6; 82 Del. Laws, c. 291, § 2;
+
+§ 6969. [Reserved].
+
+82 Del. Laws, c. 168, §§ 5, 6; 82 Del. Laws, c. 291, § 2;
+
+§ 6970. Open-end contract process for highway construction and reconstruction.
+
+(a) Legislative findings. — The General Assembly finds that certain market conditions, including but not limited to a diminished number of available private contractors and/or limits on competitive pricing opportunities for basic materials, can impede the State’s ability to complete its highway construction and reconstruction projects on a timely and useful schedule. Under these circumstances, the General Assembly finds that the limited use of an open-end contract process for such work may enable the Department of Transportation to meet its capital improvement schedules despite these impediments.
+
+(b) Notwithstanding any portion of this chapter to the contrary, the Department of Transportation is hereby authorized to use an open-end contract process for highway construction and reconstruction projects, under the following terms and conditions:
+
+(1) As used herein, “open-end contract” means a contract for highway construction and reconstruction work to be performed for a defined period of time, not to exceed 3 years, in which the Department may designate 1 or more locations for highway construction and reconstruction projects to be completed during the contract period, and in which the payments for the work to be performed at such locations are calculated based on a unit price/item basis during the contract period.
+
+(2) The Department shall limit the use of this contract process to no more than 25% of its total authorized capital improvement budget for the applicable fiscal year or years, in order to provide adequate alternative contracting opportunities for those seeking to work on other Departmental highway construction and reconstruction projects.
+
+(3) The Department may award open-end contracts to more than 1 firm, for work anywhere within the State, as it deems necessary.
+
+(4) In all other respects, the award and execution of open-end contracts shall be deemed to have complied with the provisions of this subchapter.
+
+74 Del. Laws, c. 308, § 108;
+
+§ 6970A. Design-build contracting for Transportation Trust Fund projects.
+
+(a) As used herein, “design-build contracting” is a project delivery method under which the procurement of both the design and construction of a project is done in a single contract with a company or combination of companies capable of providing the necessary engineering services and construction.
+
+(b) Notwithstanding any portion of this chapter to the contrary, the Department of Transportation is hereby authorized to use design-build contracting method, under the following terms and conditions:
+
+(1) The contract terms shall include provisions to pay the prevailing wage rates as provided in § 6960 of this title, in conjunction with federal prevailing wage rates for such work;
+
+(2) The contracts shall adhere to § 6962(d)(4)a., (d)(7) and (d)(8) of this title;
+
+(3) Any such contracts shall conform to all applicable federal laws and regulations concerning design-build contracting, including but not limited to 23 C.F.R. Part 636, without regard to the source of funds; and
+
+(4) Any design-build contract for the construction of any transportation facility shall also be subject to the provisions of Chapter 8 of Title 17.
+
+(c) The use of design-build contracting shall be used at the discretion of the Secretary of the Department of Transportation for specialized projects that have time constraints, unique site conditions, specialized construction methods or similar complexities and is expected to be used on a limited basis.
+
+80 Del. Laws, c. 107, § 1;
