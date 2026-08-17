@@ -1,0 +1,15 @@
+.venv
+.cache
+.cursor
+.git
+.github
+runs
+Development
+Validation
+__pycache__
+*.pyc
+*.egg-info
+.pytest_cache
+.env
+.DS_Store
+agent-transcripts

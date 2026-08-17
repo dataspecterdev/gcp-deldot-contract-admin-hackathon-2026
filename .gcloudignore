@@ -1,0 +1,12 @@
+.venv/
+.cache/
+.cursor/
+.git/
+runs/
+Development/
+Validation/
+__pycache__/
+*.pyc
+*.egg-info/
+.env
+.DS_Store

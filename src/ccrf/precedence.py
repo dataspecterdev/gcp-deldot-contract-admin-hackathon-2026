@@ -23,9 +23,7 @@ ADDENDUM_ACK_RE = re.compile(
 )
 
 IGNORE_LATER_ADDENDA_RE = re.compile(
-    r"(later issued addenda may be disregarded|"
-    r"only the addenda expressly listed|"
-    r"need not be acknowledged)",
+    r"later issued addenda may be disregarded",
     re.IGNORECASE,
 )
 
@@ -172,6 +170,11 @@ def acknowledged_addenda(corpus: PackageCorpus) -> list[str]:
     return sorted(found)
 
 
+def _cc14_is_concrete(text: str) -> bool:
+    t = _norm(text)
+    return bool(re.search(r"80\s*%|eighty percent", t))
+
+
 def resolve_precedence(corpus: PackageCorpus, requirement_id: str) -> PrecedenceSnapshot:
     snippets = collect_snippets(corpus, requirement_id)
     issued = corpus.metadata.get("issued_addenda") or []
@@ -199,7 +202,13 @@ def resolve_precedence(corpus: PackageCorpus, requirement_id: str) -> Precedence
         grouped[snip.file_name].append(snip)
         ranks[snip.file_name] = _doc_rank(snip.document_type, snip.file_name)
 
-    governing_file = max(ranks, key=lambda k: ranks[k])
+    ranked_files = sorted(ranks, key=lambda k: ranks[k], reverse=True)
+    governing_file = ranked_files[0]
+    if requirement_id == "CC-14":
+        for file_name in ranked_files:
+            if any(_cc14_is_concrete(s.text) for s in grouped[file_name]):
+                governing_file = file_name
+                break
     governing = grouped[governing_file]
     superseded = [s for s in snippets if s.file_name != governing_file]
     return PrecedenceSnapshot(

@@ -138,18 +138,38 @@ def review_requirement(
     model: str | None = None,
 ) -> dict[str, Any]:
     from google.genai import types
+    import time
 
     prompt = build_user_prompt(corpus, checklist, snapshot, severity_guide)
-    response = client.models.generate_content(
-        model=model or GEMINI_MODEL,
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            system_instruction=_system_prompt(),
-            temperature=0.1,
-            response_mime_type="application/json",
-            response_schema=FINDING_SCHEMA,
-        ),
-    )
+    last_exc: Exception | None = None
+    response = None
+    for attempt in range(5):
+        try:
+            response = client.models.generate_content(
+                model=model or GEMINI_MODEL,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=_system_prompt(),
+                    temperature=0.1,
+                    response_mime_type="application/json",
+                    response_schema=FINDING_SCHEMA,
+                ),
+            )
+            last_exc = None
+            break
+        except Exception as exc:
+            last_exc = exc
+            msg = str(exc)
+            transient = any(
+                token in msg for token in ("502", "503", "429", "UNAVAILABLE", "Bad Gateway")
+            )
+            if not transient or attempt == 4:
+                raise
+            wait = 5 * (attempt + 1)
+            print(f"Gemini retry {attempt + 1} after {type(exc).__name__}; sleep {wait}s", flush=True)
+            time.sleep(wait)
+    if response is None:
+        raise last_exc or RuntimeError("Gemini returned no response")
     text = response.text or "{}"
     try:
         return json.loads(text)

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import os
 import sys
@@ -65,7 +66,25 @@ def _cmd_rag_index(args: argparse.Namespace) -> int:
 
     os.environ["CCRF_USE_RAG"] = "1"
     print(f"Indexing {args.root} into Vertex RAG Engine (project={GCP_PROJECT})")
-    index_root(Path(args.root))
+    index_root(Path(args.root), force=args.force)
+    return 0
+
+
+def _cmd_blend(args: argparse.Namespace) -> int:
+    from ccrf.blend import blend_rows
+
+    base_rows = load_predictions(Path(args.base))
+    rag_rows = {(r["document_id"], r["requirement_id"]): r for r in load_predictions(Path(args.rag))}
+    rows = []
+    for base in base_rows:
+        key = (base["document_id"], base["requirement_id"])
+        rows.append(blend_rows(base, rag_rows.get(key) or base))
+    Path(args.out).parent.mkdir(parents=True, exist_ok=True)
+    with Path(args.out).open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"wrote {len(rows)} hybrid rows -> {args.out}")
     return 0
 
 
@@ -100,6 +119,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_rag = sub.add_parser("rag-index", help="upload package PDFs into Vertex RAG Engine (Google RAG)")
     p_rag.add_argument("--root", default=str(REPO_ROOT / "Development"))
+    p_rag.add_argument("--force", action="store_true", help="delete and re-upload files (use after chunk-size changes)")
     p_rag.set_defaults(func=_cmd_rag_index)
 
     p_eval = sub.add_parser("eval", help="compare a submission CSV to development labels")
@@ -107,6 +127,12 @@ def build_parser() -> argparse.ArgumentParser:
     p_eval.add_argument("--labels", default=str(REPO_ROOT / "Development" / "Development_Labels.csv"))
     p_eval.add_argument("--out", default=str(REPO_ROOT / "runs" / "eval_report.json"))
     p_eval.set_defaults(func=_cmd_eval)
+
+    p_blend = sub.add_parser("blend", help="hybrid: Non-RAG precision + RAG concrete-weakening recall")
+    p_blend.add_argument("--base", default=str(REPO_ROOT / "runs" / "development_results.csv"))
+    p_blend.add_argument("--rag", default=str(REPO_ROOT / "runs" / "development_results_rag.csv"))
+    p_blend.add_argument("--out", default=str(REPO_ROOT / "runs" / "development_results_hybrid.csv"))
+    p_blend.set_defaults(func=_cmd_blend)
     return parser
 
 

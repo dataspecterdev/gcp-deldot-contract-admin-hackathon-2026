@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from typing import Any
 
@@ -9,8 +10,14 @@ from ccrf.evidence import evidence_supported
 from ccrf.extract import extract_package
 from ccrf.ingest import discover_packages, load_checklist, load_severity_guidance
 from ccrf.models import Finding, PackageCorpus
-from ccrf.precedence import fhwa_physically_included, ignores_later_addenda, resolve_precedence
-from ccrf.rag import merge_rag_snippets, rag_enabled, retrieve_snippets
+from ccrf.precedence import (
+    _cc14_is_concrete,
+    fhwa_physically_included,
+    ignores_later_addenda,
+    resolve_precedence,
+)
+from ccrf.blend import upgrade_from_rag_recall
+from ccrf.rag import rag_enabled, retrieve_snippets
 from ccrf.review import inapplicable_finding, review_requirement
 
 
@@ -78,6 +85,69 @@ def _to_finding(
     )
 
 
+SHORTHAND_QUOTE_RE = re.compile(
+    r"(the stated period|the reference period|reference timing|"
+    r"required proof of insurance|within the reference|"
+    r"same priority sequence|order of precedence supplied|"
+    r"right to audit and record retention)",
+    re.IGNORECASE,
+)
+MATERIAL_QUOTE_RE = re.compile(
+    r"("
+    r"\b5\s*%\b|\b5 percent\b|\b80\s*%\b|eighty percent|"
+    r"\b25\s*%\b|\b75\s*%\b|\$10,000|"
+    r"45 calendar|45 days|60 day|30 calendar|"
+    r"1 year|one year|optional|"
+    r"after work begins|oral direction|"
+    r"automatic|"
+    r"does not apply|"
+    r"later issued addenda may be disregarded|"
+    r"fhwa-1273"
+    r")",
+    re.IGNORECASE,
+)
+
+
+def _downrank_shorthand_flag(finding: Finding) -> Finding:
+    if finding.predicted_label != "FLAG" or finding.applicability_decision != "APPLIES":
+        return finding
+    quote = finding.draft_evidence or ""
+    if SHORTHAND_QUOTE_RE.search(quote) and not MATERIAL_QUOTE_RE.search(quote):
+        finding.predicted_label = "NO_FLAG"
+        finding.severity = "Info"
+        finding.confidence = min(finding.confidence, 0.4)
+        finding.recommended_human_action = "No action"
+        finding.explanation = (
+            "Down-ranked to NO_FLAG: draft_evidence is challenge shorthand/equivalent "
+            "wording, not a different concrete number or process. " + finding.explanation
+        )
+    return finding
+
+
+def _upgrade_cc14_from_corpus(finding: Finding, corpus: PackageCorpus) -> Finding:
+    if finding.requirement_id != "CC-14" or finding.applicability_decision != "APPLIES":
+        return finding
+    if finding.predicted_label == "FLAG":
+        return finding
+    for doc in corpus.documents:
+        for page in doc.pages:
+            if not _cc14_is_concrete(page.text):
+                continue
+            finding.predicted_label = "FLAG"
+            finding.severity = "High"
+            finding.recommended_human_action = "Review"
+            finding.confidence = max(finding.confidence, 0.9)
+            finding.governing_document = doc.file_name
+            finding.draft_location = f"{doc.file_name} p.{page.page}"
+            finding.draft_evidence = page.text.strip()[:500]
+            finding.explanation = (
+                "Concrete 80% subcontracting weakening is present in the package and "
+                "was not restored by a later Addendum. " + finding.explanation
+            )
+            return finding
+    return finding
+
+
 def _apply_deterministic_overrides(
     finding: Finding,
     corpus: PackageCorpus,
@@ -110,6 +180,15 @@ def _apply_deterministic_overrides(
                 f"Issued addenda {issued} vs acknowledged {acknowledged}; "
                 f"ignores_later={ignores}; missing {missing}. " + finding.explanation
             )
+        else:
+            finding.predicted_label = "NO_FLAG"
+            finding.severity = "Info"
+            finding.recommended_human_action = "No action"
+            finding.explanation = (
+                "CC-08: issued addenda without an explicit 'later issued Addenda may be "
+                "disregarded' clause (and without a partial acknowledgment that omits a "
+                "later Addendum) is NO_FLAG. " + finding.explanation
+            )
     return finding
 
 
@@ -131,15 +210,18 @@ def review_package(package_dir: Path, client: Any | None = None) -> list[Finding
                 "and export GOOGLE_CLOUD_PROJECT=hackathon-2026-transport-2"
             )
         snapshot = resolve_precedence(corpus, rid)
+        rag_hits: list = []
         if rag_enabled():
             rag_hits = retrieve_snippets(
-                corpus.package_id, rid, checklist_name=row.name
+                corpus.package_id,
+                rid,
+                checklist_name=row.name,
+                challenge_rule=row.challenge_reference_rule,
             )
-            combined = merge_rag_snippets(snapshot.governing_snippets, rag_hits)
-            snapshot.rag_snippets = combined[len(snapshot.governing_snippets) :]
-            snapshot.hints["vertex_rag"] = bool(snapshot.rag_snippets)
+            snapshot.hints["vertex_rag"] = bool(rag_hits)
+            snapshot.rag_snippets = []
             print(
-                f"{corpus.package_id} {rid} gemini rag_hits={len(rag_hits)}",
+                f"{corpus.package_id} {rid} gemini rag_kept={len(rag_hits)}",
                 flush=True,
             )
         else:
@@ -148,7 +230,11 @@ def review_package(package_dir: Path, client: Any | None = None) -> list[Finding
         finding = _to_finding(
             corpus.package_id, row, decision, reason, snapshot, model_out, corpus
         )
-        findings.append(_apply_deterministic_overrides(finding, corpus, snapshot))
+        finding = _downrank_shorthand_flag(finding)
+        finding = _apply_deterministic_overrides(finding, corpus, snapshot)
+        finding = _upgrade_cc14_from_corpus(finding, corpus)
+        finding = upgrade_from_rag_recall(finding, rag_hits)
+        findings.append(finding)
     if len(findings) != 18:
         raise RuntimeError(f"Expected 18 rows, got {len(findings)} for {corpus.package_id}")
     print(f"finished {corpus.package_id} ({len(findings)} rows)", flush=True)

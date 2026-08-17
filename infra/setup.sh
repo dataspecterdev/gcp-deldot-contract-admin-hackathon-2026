@@ -34,11 +34,8 @@ fi
 echo "==> Setting active project"
 gcloud config set project "${PROJECT_ID}"
 
-echo "==> Enable Vertex AI (Gemini + RAG Engine)"
-gcloud services enable aiplatform.googleapis.com --project "${PROJECT_ID}"
-
-# Phase 2 (run later, after Development scoring is locked):
-# gcloud services enable documentai.googleapis.com run.googleapis.com --project "${PROJECT_ID}"
+echo "==> Enable Vertex AI (Gemini + RAG Engine) and Cloud Run"
+gcloud services enable aiplatform.googleapis.com run.googleapis.com --project "${PROJECT_ID}"
 
 if [[ ! -f "${HOME}/.config/gcloud/application_default_credentials.json" ]]; then
   echo "==> Application Default Credentials for local Python (browser again)"

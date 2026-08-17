@@ -172,7 +172,7 @@ def get_or_create_corpus(package_id: str) -> str:
     return created.name
 
 
-def index_package(package_dir: Path) -> str:
+def index_package(package_dir: Path, *, force: bool = False) -> str:
     rag = _rag()
 
     metadata = load_metadata(package_dir)
@@ -180,8 +180,13 @@ def index_package(package_dir: Path) -> str:
     corpus_name = get_or_create_corpus(package_id)
     existing: set[str] = set()
     try:
-        for rag_file in rag.list_files(corpus_name=corpus_name):
-            existing.add(getattr(rag_file, "display_name", "") or "")
+        rag_files = list(rag.list_files(corpus_name=corpus_name))
+        if force:
+            for rag_file in rag_files:
+                print(f"RAG delete {getattr(rag_file, 'display_name', rag_file.name)}")
+                rag.delete_file(name=rag_file.name, corpus_name=corpus_name)
+            rag_files = []
+        existing = {getattr(f, "display_name", "") or "" for f in rag_files}
     except Exception as exc:
         print(f"RAG list_files warning: {exc}")
 
@@ -200,7 +205,7 @@ def index_package(package_dir: Path) -> str:
                 display_name=display,
                 description=ref.document_type,
                 transformation_config=rag.TransformationConfig(
-                    chunking_config=rag.ChunkingConfig(chunk_size=512, chunk_overlap=100)
+                    chunking_config=rag.ChunkingConfig(chunk_size=1024, chunk_overlap=150)
                 ),
             )
             uploaded.append(display)
@@ -216,11 +221,11 @@ def index_package(package_dir: Path) -> str:
     return corpus_name
 
 
-def index_root(root: Path) -> None:
+def index_root(root: Path, *, force: bool = False) -> None:
     ensure_serverless_rag_engine()
     for package_dir in discover_packages(root):
         try:
-            index_package(package_dir)
+            index_package(package_dir, force=force)
         except Exception as exc:
             print(f"RAG index failed for {package_dir}: {exc}")
 
@@ -241,37 +246,85 @@ def _retrieval_query(corpus_name: str, text: str, top_k: int) -> list[Any]:
     return list(inner or [])
 
 
+_HEADER_MARKERS = (
+    "sample contract document",
+    "sample material - not an executed",
+    "for evaluation use only",
+    "contract clause risk flagging",
+    "sample attachment for contract-package evaluation",
+)
+
+
+def strip_boilerplate(text: str) -> str:
+    """Drop challenge cover-page lines so retrieval is judged on clause text."""
+    kept: list[str] = []
+    for raw in (text or "").splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        low = line.lower()
+        if any(marker in low for marker in _HEADER_MARKERS):
+            continue
+        if low.startswith("dev-") and "page" in low:
+            continue
+        kept.append(line)
+    return "\n".join(kept).strip()
+
+
+def snippet_relevant(text: str, requirement_id: str) -> bool:
+    keys = REQUIREMENT_KEYWORDS.get(requirement_id, [])
+    if not keys:
+        return len(text) >= 80
+    hay = " ".join((text or "").lower().split())
+    hay = hay.replace("percent", "%").replace("per cent", "%")
+    for key in keys:
+        needle = " ".join(key.lower().split()).replace("percent", "%").replace("per cent", "%")
+        if needle and needle in hay:
+            return True
+        compact = needle.replace(" ", "")
+        if compact and compact in hay.replace(" ", ""):
+            return True
+    return False
+
+
+def build_retrieval_query(
+    requirement_id: str,
+    checklist_name: str = "",
+    challenge_rule: str = "",
+) -> str:
+    keys = REQUIREMENT_KEYWORDS.get(requirement_id, [])
+    rule = " ".join((challenge_rule or "").split())[:240]
+    parts = [requirement_id, checklist_name, *keys[:10], rule]
+    return " ".join(p for p in parts if p).strip()
+
+
 def retrieve_snippets(
     package_id: str,
     requirement_id: str,
     checklist_name: str = "",
     *,
-    top_k: int = 6,
+    challenge_rule: str = "",
+    top_k: int = 4,
+    fetch_k: int = 12,
 ) -> list[Snippet]:
     index = _load_index()
     corpus_name = (index.get(package_id) or {}).get("corpus_name")
     if not corpus_name:
         return []
-    keys = REQUIREMENT_KEYWORDS.get(requirement_id, [])
-    query = " ".join(
-        [
-            package_id,
-            requirement_id,
-            checklist_name,
-            "contract clause addendum special provisions",
-            " ".join(keys[:8]),
-        ]
-    ).strip()
+    query = build_retrieval_query(requirement_id, checklist_name, challenge_rule)
     try:
-        contexts = _retrieval_query(corpus_name, query, top_k)
+        contexts = _retrieval_query(corpus_name, query, fetch_k)
     except Exception as exc:
         print(f"RAG retrieve failed for {package_id} {requirement_id}: {exc}")
         return []
 
     snippets: list[Snippet] = []
     for ctx in contexts:
-        text = (getattr(ctx, "text", None) or getattr(ctx, "content", None) or "").strip()
+        raw = (getattr(ctx, "text", None) or getattr(ctx, "content", None) or "").strip()
+        text = strip_boilerplate(raw) or raw
         if len(text) < 40:
+            continue
+        if not snippet_relevant(text, requirement_id):
             continue
         source = (
             getattr(ctx, "source_display_name", None)
@@ -290,7 +343,9 @@ def retrieve_snippets(
                 is_revision=False,
             )
         )
-    return snippets[:top_k]
+        if len(snippets) >= top_k:
+            break
+    return snippets
 
 
 def _norm_snippet_text(text: str) -> str:
