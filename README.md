@@ -118,7 +118,9 @@ python -m ccrf.cli run --root Development --out runs/development_results.csv
 python -m ccrf.cli eval --pred runs/development_results.csv
 ```
 
-`eval-applicability` and `extract` work without GCP. `run` needs Vertex ADC after `bash infra/setup.sh`. Do not score Validation until Development is frozen (it is frozen at the table above). Scoring path uses `CCRF_USE_RAG=0` so a leftover `rag_index.json` does not auto-enable RAG.
+`eval-applicability` and `extract` work without GCP. `run` needs Vertex ADC after `bash infra/setup.sh`. Scoring path uses `CCRF_USE_RAG=0` so a leftover `rag_index.json` does not auto-enable RAG.
+
+Validation was run **once** on the frozen Non-RAG path (no retune): `Submission/validation_results.csv` (36 rows, 18 per package, schema-valid).
 
 ## Vertex RAG Engine (Google RAG)
 
@@ -144,11 +146,11 @@ gcloud run deploy ccrf --source . --region us-central1 --allow-unauthenticated \
   --set-env-vars GOOGLE_CLOUD_PROJECT=hackathon-2026-transport-2,GOOGLE_CLOUD_LOCATION=us-central1,CCRF_USE_RAG=0
 ```
 
-`POST /v1/packages/review` accepts a zip of one package (`Project_Metadata.json` + `Docs/`). `GET /v1/health` is the probe. Findings are for human review, not legal conclusions. Enabling Cloud Run APIs / IAM for the default SA may need an explicit org-policy exemption.
+`POST /v1/packages/review` accepts a zip of one package (`Project_Metadata.json` + `Docs/`). `GET /v1/health` is the probe. Findings are for human review, not legal conclusions.
+
+Cloud Run APIs are enabled on `hackathon-2026-transport-2`. Source deploy still needs a project owner to grant the default compute SA `822735995797-compute@developer.gserviceaccount.com` **Cloud Run Builder** (`roles/run.builder`) and **Vertex AI User** (`roles/aiplatform.user`). This account cannot `setIamPolicy`.
 
 ## Next
 
-- Optional: last two Pine Grove FPs; then freeze harder.
-- Run Validation once (`Mill_Creek`, `Oak_Hollow`); do not retune.
 - Deploy Cloud Run after APIs are enabled.
-- Locator cites a page only for a verbatim `draft_evidence` match in extracted text.
+- Dry-run the presentation. Do not retune on Validation.
