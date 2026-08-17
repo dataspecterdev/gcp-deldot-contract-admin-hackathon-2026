@@ -26,9 +26,48 @@ app = FastAPI(
 )
 
 
+@app.get("/", response_class=HTMLResponse)
+def home() -> str:
+    """Architecture page for the Cloud Run demo. Does not change scoring."""
+    return """<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>CCRF on GCP</title>
+<style>
+body { font-family: Georgia, serif; background: #f4f1ea; color: #1b2430; margin: 0; }
+main { max-width: 720px; margin: 0 auto; padding: 36px 20px 64px; }
+h1 { font-size: 22px; }
+h2 { font-size: 16px; margin-top: 28px; }
+.sub { color: #5a6570; }
+code, a { color: #9a3412; }
+li { margin: 10px 0; }
+</style></head>
+<body><main>
+<h1>DelDOT contract clause flagging · GCP</h1>
+<p class="sub">Vertex Gemini 2.5 Flash on project hackathon-2026-transport-2. Decision support for human review — not legal advice.</p>
+<h2>Where things live</h2>
+<ul>
+<li><strong>Code and Validation CSV</strong> are on GitHub (and your laptop), not inside this container:
+  <a href="https://github.com/dataspecterdev/gcp-deldot-contract-admin-hackathon-2026">gcp-deldot-contract-admin-hackathon-2026</a>.
+  Submission file: <code>Submission/validation_results.csv</code> (36 rows, Mill Creek + Oak Hollow).</li>
+<li><strong>Browser 403</strong> means Cloud Run invoke is still private. Opening this URL without
+  <code>roles/run.invoker</code> for <code>allUsers</code> is blocked by IAM, not by the app.
+  Health: <a href="/v1/health"><code>GET /v1/health</code></a>.</li>
+<li><strong>Frozen scorer is Non-RAG on purpose:</strong> pypdf + keyword/addendum precedence +
+  Gemini 2.5 Flash + citation check + CC-08/CC-12/CC-14/shorthand gates.
+  Vertex RAG Engine is the Google analogue of Azure AI Search / Bedrock Knowledge Bases for the
+  multi-cloud demo. It is not the frozen judge. Env: <code>CCRF_USE_RAG=0</code>.</li>
+</ul>
+<h2>Demo</h2>
+<p><code>POST /v1/packages/review</code> with a zip of one package
+(<code>Project_Metadata.json</code> + <code>Docs/</code>). Add <code>?format=html</code> for
+verbatim page highlights. Yellow marks only spans that appear in extracted PDF text.</p>
+</main></body></html>
+"""
+
+
 @app.get("/v1/health")
 def health() -> dict[str, str]:
-    return {"status": "ok"}
+    return {"status": "ok", "scorer": "non-rag", "project": "hackathon-2026-transport-2"}
 
 
 @app.post("/v1/packages/review")

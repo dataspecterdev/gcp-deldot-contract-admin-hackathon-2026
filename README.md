@@ -135,11 +135,22 @@ python -m ccrf.cli blend --base runs/development_results.csv --rag runs/developm
 
 `--rag` retrieves extra chunks. Indexing and A/B are done: RAG recall won, precision lost. Frozen scoring stays non-RAG; `blend` is the optional CSV hybrid.
 
+## Where things live
+
+| What | Where |
+|---|---|
+| Code + Validation CSV | GitHub (`Submission/validation_results.csv`) and this laptop |
+| Gemini 2.5 Flash | Vertex on `hackathon-2026-transport-2` |
+| Review API | Cloud Run `https://ccrf-822735995797.us-central1.run.app` |
+| Frozen scorer | **Non-RAG** (`CCRF_USE_RAG=0`): keywords + Flash + gates |
+| Vertex RAG Engine | Indexed for the multi-cloud demo; not the frozen judge |
+| Browser 403 on `/` | Cloud Run invoke IAM — grant `allUsers` `roles/run.invoker` |
+
+`GET /` on Cloud Run is this architecture page. It does not change scoring.
+
 ## Cloud Run (GCP build)
 
-Live service: [https://ccrf-822735995797.us-central1.run.app](https://ccrf-822735995797.us-central1.run.app)
-
-`GET /v1/health` returns `{"status":"ok"}` when called with a Google identity token. `POST /v1/packages/review` accepts a zip of one package (`Project_Metadata.json` + `Docs/`). Add `?format=html` for the verbatim-highlight review cards. Findings are for human review, not legal conclusions.
+Live service: [https://ccrf-822735995797.us-central1.run.app](https://ccrf-822735995797.us-central1.run.app) (`GET /` architecture page; `GET /v1/health` probe). `POST /v1/packages/review` accepts a zip; add `?format=html` for verbatim highlights.
 
 Public (`allUsers`) invoke is not set yet — this account cannot `run.services.setIamPolicy`. A project owner can open it with:
 
