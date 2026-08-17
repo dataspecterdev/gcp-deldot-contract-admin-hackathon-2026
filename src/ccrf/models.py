@@ -95,6 +95,7 @@ class Finding:
     explanation: str
     confidence: float
     recommended_human_action: str
+    locator: dict[str, Any] = field(default_factory=dict)
 
     def as_row(self) -> dict[str, str]:
         return {
@@ -114,3 +115,8 @@ class Finding:
             "confidence": f"{self.confidence:.2f}",
             "recommended_human_action": self.recommended_human_action,
         }
+
+    def as_demo(self) -> dict[str, Any]:
+        row: dict[str, Any] = dict(self.as_row())
+        row["locator"] = self.locator or {}
+        return row

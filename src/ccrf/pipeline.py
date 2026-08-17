@@ -17,6 +17,7 @@ from ccrf.precedence import (
     resolve_precedence,
 )
 from ccrf.blend import upgrade_from_rag_recall
+from ccrf.locator import attach_locator
 from ccrf.rag import rag_enabled, retrieve_snippets
 from ccrf.review import inapplicable_finding, review_requirement
 
@@ -106,6 +107,14 @@ MATERIAL_QUOTE_RE = re.compile(
     r")",
     re.IGNORECASE,
 )
+# CC-12 material is a different follow-up clock, not CC-11 oral-direction text
+# and not "thirty days" from registration/license clauses.
+CC12_CONCRETE_FOLLOWUP_RE = re.compile(
+    r"follow-up documentation may be submitted within thirty|"
+    r"written follow-up.{0,80}thirty\s*\(?\s*30|"
+    r"thirty\s*\(?\s*30\s*\)?\s*calendar days after the alleged",
+    re.IGNORECASE | re.DOTALL,
+)
 
 
 def _downrank_shorthand_flag(finding: Finding) -> Finding:
@@ -145,6 +154,57 @@ def _upgrade_cc14_from_corpus(finding: Finding, corpus: PackageCorpus) -> Findin
                 "was not restored by a later Addendum. " + finding.explanation
             )
             return finding
+    return finding
+
+
+def _cc12_has_concrete_followup(text: str) -> bool:
+    return bool(CC12_CONCRETE_FOLLOWUP_RE.search(text or ""))
+
+
+def _gate_cc12_concrete_followup(finding: Finding, snapshot=None) -> Finding:
+    """FLAG CC-12 only for a different concrete follow-up deadline in governing text."""
+    if finding.requirement_id != "CC-12" or finding.predicted_label != "FLAG":
+        return finding
+    if finding.applicability_decision != "APPLIES":
+        return finding
+    blobs = [finding.draft_evidence or ""]
+    if snapshot is not None:
+        blobs.extend(s.text for s in snapshot.governing_snippets)
+    if any(_cc12_has_concrete_followup(blob) for blob in blobs):
+        return finding
+    finding.predicted_label = "NO_FLAG"
+    finding.severity = "Info"
+    finding.confidence = min(finding.confidence, 0.4)
+    finding.recommended_human_action = "No action"
+    finding.explanation = (
+        "Down-ranked to NO_FLAG: CC-12 FLAG requires a different concrete follow-up "
+        "deadline (for example 30 calendar days vs 7). Challenge shorthand such as "
+        "'the stated period', and CC-11 oral-direction language, are not CC-12 findings. "
+        + finding.explanation
+    )
+    return finding
+
+
+def _gate_cc14_requires_concrete(finding: Finding, corpus: PackageCorpus) -> Finding:
+    """FLAG CC-14 only when 80%/eighty percent is in extracted package text."""
+    if finding.requirement_id != "CC-14" or finding.applicability_decision != "APPLIES":
+        return finding
+    if finding.predicted_label != "FLAG":
+        return finding
+    if _cc14_is_concrete(finding.draft_evidence):
+        return finding
+    if any(_cc14_is_concrete(page.text) for doc in corpus.documents for page in doc.pages):
+        return finding
+    finding.predicted_label = "NO_FLAG"
+    finding.severity = "Info"
+    finding.confidence = min(finding.confidence, 0.4)
+    finding.recommended_human_action = "No action"
+    finding.explanation = (
+        "Down-ranked to NO_FLAG: CC-14 FLAG requires a concrete 108.1 weakening "
+        "(80%/eighty percent subcontracting) in the package text. Silence, omitted "
+        "reprint of the 50% floor, or license-timing text (CC-07) is not a CC-14 FLAG. "
+        + finding.explanation
+    )
     return finding
 
 
@@ -202,7 +262,8 @@ def review_package(package_dir: Path, client: Any | None = None) -> list[Finding
         decision, reason = decide_applicability(rid, corpus.metadata)
         if decision == "DOES_NOT_APPLY":
             print(f"{corpus.package_id} {rid} skip DOES_NOT_APPLY", flush=True)
-            findings.append(inapplicable_finding(corpus.package_id, row, reason, corpus.metadata))
+            skip = inapplicable_finding(corpus.package_id, row, reason, corpus.metadata)
+            findings.append(attach_locator(skip, corpus))
             continue
         if client is None:
             raise RuntimeError(
@@ -234,6 +295,9 @@ def review_package(package_dir: Path, client: Any | None = None) -> list[Finding
         finding = _apply_deterministic_overrides(finding, corpus, snapshot)
         finding = _upgrade_cc14_from_corpus(finding, corpus)
         finding = upgrade_from_rag_recall(finding, rag_hits)
+        finding = _gate_cc12_concrete_followup(finding, snapshot)
+        finding = _gate_cc14_requires_concrete(finding, corpus)
+        finding = attach_locator(finding, corpus, snapshot)
         findings.append(finding)
     if len(findings) != 18:
         raise RuntimeError(f"Expected 18 rows, got {len(findings)} for {corpus.package_id}")

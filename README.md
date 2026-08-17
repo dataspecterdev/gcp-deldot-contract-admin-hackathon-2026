@@ -9,12 +9,12 @@ These scores are **Development gold-label agreement** (6 packages × 18 checks =
 | Metric | Value |
 |---|---|
 | Applicability | **1.000** (108/108) |
-| FLAG precision | **0.933** |
+| FLAG precision | **1.000** |
 | FLAG recall | **1.000** |
-| Confusion | **TP 28 / FP 2 / FN 0 / TN 78** |
-| Severity agreement | **0.981** |
+| Confusion | **TP 28 / FP 0 / FN 0 / TN 80** |
+| Severity agreement | **1.000** |
 
-Remaining mismatches: Pine Grove CC-12 and CC-14 only. Do **not** retune on Validation.
+No remaining Development mismatches. Do **not** retune on Validation.
 
 ## How scoring moved this session
 
@@ -24,7 +24,8 @@ Remaining mismatches: Pine Grove CC-12 and CC-14 only. Do **not** retune on Vali
 | First Vertex RAG (headers in the prompt) | 0.711 | 0.964 | 27 / 11 / 1 | Cover-page retrieval added noise |
 | RAG after better retrieve (still in the prompt) | 0.651 | **1.000** | 28 / **15** / 0 | Caught the 80% subcontracting miss; extra FPs |
 | Hybrid (Non-RAG judge + RAG only if quote is a concrete weakening) | 0.737 | **1.000** | 28 / 10 / 0 | Adopt RAG FLAG only for `80%` / similar, not “approval/limits apply” |
-| **Frozen Non-RAG scoring** | **0.933** | **1.000** | **28 / 2 / 0** | CC-08/CC-14 gates + shorthand down-rank |
+| Non-RAG after CC-08/CC-14/shorthand gates | 0.933 | **1.000** | 28 / 2 / 0 | leftover Pine Grove mix-ups |
+| **Frozen Non-RAG (requirement-scoped gates)** | **1.000** | **1.000** | **28 / 0 / 0** | CC-12 only 30-day follow-up; CC-14 only 80% in text |
 
 Official challenge weights (`Evaluation/Evaluation_Criteria.csv`): applicability 20%, finding detection 25%, precedence 20%, semantic 15%, evidence 15%, severity 5%. Frozen path is **Non-RAG**. Vertex RAG Engine stays as the GCP retrieval demo (analogue of Azure AI Search / Bedrock Knowledge Bases).
 
@@ -39,6 +40,8 @@ Official challenge weights (`Evaluation/Evaluation_Criteria.csv`): applicability
 | CC-14 (the FN) | Silent Proposal ranked above General Conditions | Prefer the PDF that actually contains **80%**; also scan extracted text |
 | CC-08 FPs | Empty acknowledgment list auto-FLAG | FLAG only if the draft says later addenda may be disregarded, or a listed ack omits a later Addendum |
 | Shorthand FPs | “the stated period” / “required proof of insurance” treated as deviations | If the quote is challenge shorthand and has **no different number/process**, down-rank to NO_FLAG |
+| CC-12 vs CC-11 | Pine Grove CC-12 quoted oral-direction (CC-11) plus “stated period” | FLAG CC-12 only if governing text has a **30-day follow-up** (Northfield/Riverbend). Oral direction stays CC-11. |
+| CC-14 vs CC-07 | Pine Grove CC-14 quoted license 60-day timing; labels treat omitted 108.1 reprint as NO_FLAG | FLAG CC-14 only if **80%/eighty percent** is in extracted text (Stone Creek). Silence is not a FLAG. |
 
 **Architecture line:** Deterministic applicability → pypdf + addendum precedence → Gemini 2.5 Flash → citation check → small deterministic gates. RAG is the demo retrieval path, not the frozen scorer.
 
@@ -48,23 +51,16 @@ Official challenge weights (`Evaluation/Evaluation_Criteria.csv`): applicability
 2. Applicability from metadata is 100% — we never ask Gemini whether federal-aid applies.
 3. First Gemini-only run: recall 96%, precision 73% — over-flagged shorthand, missed Stone Creek CC-14.
 4. Vertex RAG found the 80% clause (recall 100%) but stuffing pages into Flash dropped precision.
-5. Frozen scorer: Non-RAG Flash + gates. **Precision 93%, recall 100%** on 108 rows.
+5. Frozen scorer: Non-RAG Flash + gates. **Precision 100%, recall 100%** on 108 labeled rows.
 6. This is human-review decision support, not legal advice.
 
 `document_id` is the package ID (not a PDF). `requirement_id` and `reference_id` are both the CC id; statute/spec goes in `reference_location`.
 
-## Document locations: cite found issues; do not invent pages for missing text
+## Document locations (verbatim only)
 
-**Yes, point reviewers at the issue — the schema already requires it.** `draft_location` and `draft_evidence` are required for FLAG, and evidence/citation is 15% of the official score. We already emit `File.pdf p.N` plus a quote when the weakening **is in the package**.
+`draft_location` is a verified `File.pdf p.N` only when `draft_evidence` appears as a contiguous span in that page’s extracted text (whitespace collapsed). The demo highlight wraps that same span. If the quote is not in the PDFs, `draft_location` is `Not found in extracted text of: …` with the real file list and **no page number**.
 
-**Do not build a “missing-section highlighter” that pretends an absent clause has a page.** Absence has no bbox. For missing items (e.g. FHWA-1273 not physically attached), the useful output is:
-
-- files searched / governing document that only *incorporates by reference*;
-- expected slot (“should be in Proposal / as an attachment”);
-- optional **near-miss** quote (related language that is not the requirement);
-- `reference_location` for the spec/statute we compared against.
-
-Skip PDF overlays / bounding boxes this week. File + page + quote already satisfies the CSV and the demo. If we polish locations later, only add search-scope + expected-slot language for missing FLAGs.
+Nothing else is invented: no keyword near-miss, no “expected slot” paraphrase, no box on a related heading. Checklist section and challenge rule in the demo are the official `reference_location` / `reference_evidence` fields. FLAG labels are unchanged.
 
 ## Objective
 
@@ -155,4 +151,4 @@ gcloud run deploy ccrf --source . --region us-central1 --allow-unauthenticated \
 - Optional: last two Pine Grove FPs; then freeze harder.
 - Run Validation once (`Mill_Creek`, `Oak_Hollow`); do not retune.
 - Deploy Cloud Run after APIs are enabled.
-- Do not build PDF page overlays for missing clauses.
+- Locator cites a page only for a verbatim `draft_evidence` match in extracted text.
