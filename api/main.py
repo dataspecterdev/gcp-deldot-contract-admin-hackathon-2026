@@ -99,15 +99,19 @@ def _demo_html(findings: list[Finding]) -> str:
                 f"<div class='anchor'><div class='meta'>{file_name} · p.{page} · verbatim match</div>"
                 f"<blockquote>{mark}</blockquote></div>"
             )
+        evidence_block = "".join(anchors_html) or (
+            "<p class='note'>No verbatim page match — no page is cited.</p>"
+        )
+        badge = "Located in package" if found else "Quote not in extracted text"
         cards.append(
             f"<article class='card {kind}'>"
             f"<header><span class='rid'>{html.escape(finding.requirement_id)}</span>"
             f"<span class='sev'>{html.escape(finding.severity)}</span>"
-            f"<span class='kind'>{'Located in package' if found else 'Quote not in extracted text'}</span></header>"
+            f"<span class='kind'>{badge}</span></header>"
             f"<p class='loc'>{html.escape(finding.draft_location)}</p>"
             f"<p class='slot'><strong>Checklist section:</strong> {ref_loc}</p>"
             f"<p class='slot'><strong>Challenge rule:</strong> {ref_ev}</p>"
-            f"{''.join(anchors_html) or '<p class=\"note\">No verbatim page match — no page is cited.</p>'}"
+            f"{evidence_block}"
             f"<p class='why'>{html.escape(finding.explanation[:500])}</p>"
             f"<p class='files'><strong>Files in package:</strong> {searched}</p>"
             f"</article>"
